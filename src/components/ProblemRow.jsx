@@ -51,8 +51,6 @@ export default function ProblemRow({
     const cnLink = normalizeLink(problem.cnLink);
     const videoLink = normalizeLink(problem.video);
 
-    console.log(problem);
-
     return (
         <article
             className={`grid grid-cols-1 gap-3 rounded-xl border border-border p-3 md:grid-cols-[1fr_auto_auto] md:items-start ${ROW_TONE_CLASS[progress.status]}`}

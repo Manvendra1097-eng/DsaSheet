@@ -14,6 +14,7 @@ const DEFAULT_PROGRESS = { status: "not-started", notes: "", updatedAt: 0 };
 export default function App() {
     const { theme, palette, toggleTheme, togglePalette } = useTheme();
     const auth = useAuth();
+    console.log("USER: ", auth);
     const { progressMap, updateProgress, syncNow } = useProgress(
         auth.user,
         auth.setAuthMessage,
