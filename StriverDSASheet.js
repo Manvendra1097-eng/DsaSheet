@@ -886,7 +886,7 @@ const STRIVERS_SHEET = [
                     {
                         title: "Painter's partition",
                         difficulty: "Hard",
-                        lcLink: null,
+                        lcLink: "https://leetcode.com/problems/painting-the-walls/",
                         gfgLink: null,
                     },
                     {
