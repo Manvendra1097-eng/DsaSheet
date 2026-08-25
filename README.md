@@ -1,6 +1,6 @@
 # DSA Sheet Tracker
 
-A static DSA progress tracker built on top of `StriverDSASheet.js`.
+A React + Vite DSA progress tracker built on top of Striver's A2Z sheet data.
 
 - Works on GitHub Pages
 - Google login via Firebase Authentication
@@ -11,32 +11,45 @@ A static DSA progress tracker built on top of `StriverDSASheet.js`.
 - View all Striver A2Z steps and problems
 - Mark each problem: Not Started / Attempted / Solved
 - Add notes per problem
-- Search + difficulty filter + status filter
+- Search + topic filter + difficulty filter + status filter
 - Single-open accordion for steps (all collapsed at startup)
 - Auto-save to browser local storage
 - Optional cloud sync every 30 seconds
+- Amber / Orange shadcn color palettes, each with light/dark mode
+
+## Project Structure
+
+```
+public/            static assets served as-is (favicons, manifest)
+src/
+  components/      presentational React components
+  hooks/           useTheme, useAuth, useProgress
+  lib/             firebase.js, storage.js, sheet.js, syncStatus.js
+  data/            striversSheet.js (problem data)
+  App.jsx          top-level component wiring hooks + components
+  main.jsx         React entry point
+  index.css        Tailwind directives + theme tokens
+scripts/           one-off tooling (push-firebase-secrets.mjs)
+```
 
 ## Local Run
 
-Open `index.html` directly in browser, or use a static server.
-
-Example with Python:
-
 ```bash
-python -m http.server 5500
+npm install
+npm run dev
 ```
 
-Then open `http://localhost:5500`.
+Then open the printed `http://localhost:5173/...` URL.
 
 ## Firebase Setup (for cross-device sync)
 
 1. Create a Firebase project.
 2. Enable Google sign-in in Firebase Authentication.
 3. Enable Realtime Database.
-4. Copy `src/firebase-config.example.js` to `src/firebase-config.js` and fill in your values.
+4. Copy `.env.example` to `.env.local` and fill in your values (all prefixed `VITE_FIREBASE_`).
 5. Set Realtime Database rules.
 
-`src/firebase-config.js` is gitignored so your real keys are never committed — see
+`.env.local` is gitignored so your real keys are never committed — see
 [Managing secrets](#managing-secrets) below for how the deployed site still gets them.
 
 ### Realtime Database rules for authenticated users
@@ -58,17 +71,17 @@ Also add your domains in Firebase Auth authorized domains.
 
 ## Managing secrets
 
-`src/firebase-config.js` holds your Firebase Web API config. It's listed in `.gitignore` so it
-never gets pushed to GitHub. Note: this config is not a traditional secret — it's meant to be
-public in client-side apps, and real protection comes from Firebase Auth + your Realtime
-Database rules (step above), not from hiding these values. Keeping it out of git is still good
-practice since it saves you from having to rotate keys later.
+Firebase Web API config is read via Vite env vars (`import.meta.env.VITE_FIREBASE_*`) at build
+time. It's not a traditional secret — it's meant to be public in client-side apps, and real
+protection comes from Firebase Auth + your Realtime Database rules above, not from hiding these
+values. Keeping it out of git is still good practice since it saves you from having to rotate
+keys later.
 
-- **Local development:** copy `src/firebase-config.example.js` to `src/firebase-config.js` and
-  fill in your real values. This file stays on your machine only.
-- **GitHub Pages deployment:** the workflow at `.github/workflows/ci-cd.yml` generates
-  `src/firebase-config.js` at deploy time from GitHub Actions secrets, so the real file never
-  needs to exist in the repo.
+- **Local development:** copy `.env.example` to `.env.local` and fill in your real values. This
+  file stays on your machine only.
+- **GitHub Pages deployment:** the workflow at `.github/workflows/ci-cd.yml` builds the app with
+  these values injected from GitHub Actions secrets, so no real `.env` file ever needs to exist
+  in the repo.
 
 To set this up:
 
@@ -82,12 +95,12 @@ To set this up:
     - `FIREBASE_MESSAGING_SENDER_ID`
     - `FIREBASE_APP_ID`
     - `FIREBASE_MEASUREMENT_ID`
-3. Push to `main` — the workflow writes `src/firebase-config.js` from these secrets before
-   deploying, then discards the runner (nothing is committed back to the repo).
+3. Push to `main` — the workflow builds with these secrets as `VITE_FIREBASE_*` env vars, then
+   discards the runner (nothing is committed back to the repo).
 
 Alternatively, if you have the [GitHub CLI](https://cli.github.com) installed and authenticated
 (`gh auth login`), run `node scripts/push-firebase-secrets.mjs <owner>/<repo>` to push all 8
-secrets from your local `src/firebase-config.js` in one step.
+secrets from your local `.env.local` in one step.
 
 ## Deploy to GitHub Pages
 
@@ -95,7 +108,8 @@ secrets from your local `src/firebase-config.js` in one step.
 2. Ensure default branch is `main`.
 3. In GitHub repo settings, enable Pages using GitHub Actions.
 4. Add the Firebase repository secrets listed above.
-5. Push to `main` and workflow at `.github/workflows/ci-cd.yml` will validate then deploy automatically.
+5. Push to `main` and workflow at `.github/workflows/ci-cd.yml` will validate then build and
+   deploy automatically.
 
 ## Re-deploying after changes
 
@@ -109,11 +123,10 @@ Redeploying is automatic — no need to touch GitHub Pages settings again.
     git push
     ```
 3. `.github/workflows/ci-cd.yml` runs automatically on every push and pull request:
-    - **validate** job: checks JS syntax on all files and confirms `src/firebase-config.js`
-      (real secrets) was never committed.
+    - **validate** job: installs dependencies, confirms no local secrets files were committed,
+      and runs a sanity build with placeholder env values.
     - **deploy** job: only runs for pushes to `main` (skipped on pull requests), and only if
-      `validate` passes. It regenerates `src/firebase-config.js` from your GitHub secrets and
-      redeploys to Pages within ~15-20 seconds.
+      `validate` passes. It builds the app with your real secrets and redeploys to Pages.
 
 Opening a pull request runs `validate` only, so you get a pass/fail check before merging without
 deploying unfinished work.
@@ -131,7 +144,7 @@ gh workflow run ci-cd.yml --repo <owner>/<repo>
 ```
 
 Only re-run the secrets push if you change your **Firebase project values** (not app code) in
-`src/firebase-config.js`:
+`.env.local`:
 
 ```bash
 node scripts/push-firebase-secrets.mjs <owner>/<repo>
@@ -140,4 +153,4 @@ node scripts/push-firebase-secrets.mjs <owner>/<repo>
 ## Usage Across Devices
 
 1. Open app and sign in with the same Google account on every device.
-2. Your progress auto-syncs; use **Sync Now** any time to force refresh.
+2. Your progress auto-syncs; use the avatar menu's **Sync** option any time to force refresh.

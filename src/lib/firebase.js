@@ -1,13 +1,5 @@
-import {
-    initializeApp,
-    getApps,
-} from "https://www.gstatic.com/firebasejs/10.13.2/firebase-app.js";
-import {
-    getDatabase,
-    ref,
-    get,
-    set,
-} from "https://www.gstatic.com/firebasejs/10.13.2/firebase-database.js";
+import { initializeApp, getApps } from "firebase/app";
+import { getDatabase, ref, get, set } from "firebase/database";
 import {
     getAuth,
     browserLocalPersistence,
@@ -20,16 +12,22 @@ import {
     signInWithPopup,
     signInWithRedirect,
     signOut,
-} from "https://www.gstatic.com/firebasejs/10.13.2/firebase-auth.js";
-import { FIREBASE_CONFIG } from "../firebase-config.js";
+} from "firebase/auth";
 
 const PLACEHOLDER_VALUE = "REPLACE_ME";
 
-function hasRequiredConfig() {
-    if (!FIREBASE_CONFIG) {
-        return false;
-    }
+const FIREBASE_CONFIG = {
+    apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+    authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+    databaseURL: import.meta.env.VITE_FIREBASE_DATABASE_URL,
+    projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+    storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+    appId: import.meta.env.VITE_FIREBASE_APP_ID,
+    measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID,
+};
 
+function hasRequiredConfig() {
     return ["apiKey", "authDomain", "databaseURL", "projectId", "appId"].every(
         (key) => {
             const value = FIREBASE_CONFIG[key];

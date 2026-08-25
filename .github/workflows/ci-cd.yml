@@ -28,24 +28,32 @@ jobs:
               uses: actions/setup-node@v4
               with:
                   node-version: "24"
+                  cache: "npm"
 
-            - name: Check JS syntax
-              run: |
-                  set -e
-                  find . -name "*.js" -not -path "./.git/*" | while read -r file; do
-                      echo "Checking $file"
-                      node --check "$file"
-                  done
+            - name: Install dependencies
+              run: npm ci
 
             - name: Ensure real secrets file is not committed
               run: |
-                  if [ -f src/firebase-config.js ]; then
-                      echo "::error::src/firebase-config.js must never be committed. It is generated at deploy time from secrets."
+                  if [ -f .env ] || [ -f .env.local ] || [ -f src/firebase-config.js ]; then
+                      echo "::error::Local env/secrets files must never be committed. They are generated at deploy time."
                       exit 1
                   fi
 
-            - name: Ensure example config template exists
-              run: test -f src/firebase-config.example.js
+            - name: Ensure example env template exists
+              run: test -f .env.example
+
+            - name: Build (sanity check)
+              run: npm run build
+              env:
+                  VITE_FIREBASE_API_KEY: "REPLACE_ME"
+                  VITE_FIREBASE_AUTH_DOMAIN: "REPLACE_ME"
+                  VITE_FIREBASE_DATABASE_URL: "REPLACE_ME"
+                  VITE_FIREBASE_PROJECT_ID: "REPLACE_ME"
+                  VITE_FIREBASE_STORAGE_BUCKET: "REPLACE_ME"
+                  VITE_FIREBASE_MESSAGING_SENDER_ID: "REPLACE_ME"
+                  VITE_FIREBASE_APP_ID: "REPLACE_ME"
+                  VITE_FIREBASE_MEASUREMENT_ID: "REPLACE_ME"
 
     deploy:
         name: Deploy
@@ -59,28 +67,34 @@ jobs:
             - name: Checkout
               uses: actions/checkout@v4
 
+            - name: Setup Node
+              uses: actions/setup-node@v4
+              with:
+                  node-version: "24"
+                  cache: "npm"
+
+            - name: Install dependencies
+              run: npm ci
+
             - name: Setup Pages
               uses: actions/configure-pages@v5
 
-            - name: Create firebase-config.js from secrets
-              run: |
-                  cat > src/firebase-config.js << EOF
-                  export const FIREBASE_CONFIG = {
-                      apiKey: "${{ secrets.FIREBASE_API_KEY }}",
-                      authDomain: "${{ secrets.FIREBASE_AUTH_DOMAIN }}",
-                      databaseURL: "${{ secrets.FIREBASE_DATABASE_URL }}",
-                      projectId: "${{ secrets.FIREBASE_PROJECT_ID }}",
-                      storageBucket: "${{ secrets.FIREBASE_STORAGE_BUCKET }}",
-                      messagingSenderId: "${{ secrets.FIREBASE_MESSAGING_SENDER_ID }}",
-                      appId: "${{ secrets.FIREBASE_APP_ID }}",
-                      measurementId: "${{ secrets.FIREBASE_MEASUREMENT_ID }}",
-                  };
-                  EOF
+            - name: Build with secrets
+              run: npm run build
+              env:
+                  VITE_FIREBASE_API_KEY: ${{ secrets.FIREBASE_API_KEY }}
+                  VITE_FIREBASE_AUTH_DOMAIN: ${{ secrets.FIREBASE_AUTH_DOMAIN }}
+                  VITE_FIREBASE_DATABASE_URL: ${{ secrets.FIREBASE_DATABASE_URL }}
+                  VITE_FIREBASE_PROJECT_ID: ${{ secrets.FIREBASE_PROJECT_ID }}
+                  VITE_FIREBASE_STORAGE_BUCKET: ${{ secrets.FIREBASE_STORAGE_BUCKET }}
+                  VITE_FIREBASE_MESSAGING_SENDER_ID: ${{ secrets.FIREBASE_MESSAGING_SENDER_ID }}
+                  VITE_FIREBASE_APP_ID: ${{ secrets.FIREBASE_APP_ID }}
+                  VITE_FIREBASE_MEASUREMENT_ID: ${{ secrets.FIREBASE_MEASUREMENT_ID }}
 
             - name: Upload artifact
               uses: actions/upload-pages-artifact@v3
               with:
-                  path: .
+                  path: dist
 
             - name: Deploy to GitHub Pages
               id: deployment

@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
     --background: oklch(1 0 0);
     --foreground: oklch(0.145 0 0);
@@ -88,17 +92,14 @@
 }
 
 html,
-body {
+body,
+#root {
     min-height: 100%;
 }
 
 body {
     margin: 0;
     background: var(--background);
-}
-
-.is-hidden {
-    display: none !important;
 }
 
 textarea {
