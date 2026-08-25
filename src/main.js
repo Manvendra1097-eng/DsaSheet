@@ -34,6 +34,27 @@ const state = {
 
 const LOGIN_ATTEMPT_KEY = "dsa_login_attempt_in_progress";
 const THEME_KEY = "dsa_theme_preference";
+const PALETTE_KEY = "dsa_palette_preference";
+
+function getPreferredPalette() {
+    const storedPalette = localStorage.getItem(PALETTE_KEY);
+    return storedPalette === "orange" ? "orange" : "amber";
+}
+
+function applyPalette(palette) {
+    document.documentElement.setAttribute("data-palette", palette);
+    if (elements.paletteToggleBtn) {
+        elements.paletteToggleBtn.setAttribute(
+            "aria-label",
+            `Switch color palette (currently ${palette})`,
+        );
+    }
+}
+
+function setPalette(palette) {
+    localStorage.setItem(PALETTE_KEY, palette);
+    applyPalette(palette);
+}
 
 function getPreferredTheme() {
     const storedTheme = localStorage.getItem(THEME_KEY);
@@ -158,6 +179,7 @@ async function getCurrentUserWithRetry({
 }
 
 const elements = {
+    paletteToggleBtn: document.querySelector("#paletteToggleBtn"),
     themeToggleBtn: document.querySelector("#themeToggleBtn"),
     themeIconMoon: document.querySelector("#themeIconMoon"),
     themeIconSun: document.querySelector("#themeIconSun"),
@@ -595,6 +617,12 @@ async function handleAuthChange(user) {
 }
 
 function setupEvents() {
+    elements.paletteToggleBtn?.addEventListener("click", () => {
+        const currentPalette =
+            document.documentElement.getAttribute("data-palette") || "amber";
+        setPalette(currentPalette === "amber" ? "orange" : "amber");
+    });
+
     elements.themeToggleBtn?.addEventListener("click", () => {
         const currentTheme =
             document.documentElement.getAttribute("data-theme") || "light";
@@ -777,6 +805,7 @@ function renderAll() {
 }
 
 async function bootstrap() {
+    applyPalette(getPreferredPalette());
     applyTheme(getPreferredTheme());
     renderTopicOptions();
     setupEvents();

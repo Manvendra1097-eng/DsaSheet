@@ -35,34 +35,38 @@
                             mono: ["IBM Plex Mono", "monospace"],
                         },
                         colors: {
-                            border: "hsl(var(--border))",
-                            input: "hsl(var(--input))",
-                            ring: "hsl(var(--ring))",
-                            background: "hsl(var(--background))",
-                            foreground: "hsl(var(--foreground))",
+                            border: "var(--border)",
+                            input: "var(--input)",
+                            ring: "var(--ring)",
+                            background: "var(--background)",
+                            foreground: "var(--foreground)",
                             card: {
-                                DEFAULT: "hsl(var(--card))",
-                                foreground: "hsl(var(--card-foreground))",
+                                DEFAULT: "var(--card)",
+                                foreground: "var(--card-foreground)",
                             },
                             primary: {
-                                DEFAULT: "hsl(var(--primary))",
-                                foreground: "hsl(var(--primary-foreground))",
+                                DEFAULT: "var(--primary)",
+                                foreground: "var(--primary-foreground)",
                             },
                             secondary: {
-                                DEFAULT: "hsl(var(--secondary))",
-                                foreground: "hsl(var(--secondary-foreground))",
+                                DEFAULT: "var(--secondary)",
+                                foreground: "var(--secondary-foreground)",
                             },
                             muted: {
-                                DEFAULT: "hsl(var(--muted))",
-                                foreground: "hsl(var(--muted-foreground))",
+                                DEFAULT: "var(--muted)",
+                                foreground: "var(--muted-foreground)",
                             },
                             accent: {
-                                DEFAULT: "hsl(var(--accent))",
-                                foreground: "hsl(var(--accent-foreground))",
+                                DEFAULT: "var(--accent)",
+                                foreground: "var(--accent-foreground)",
+                            },
+                            destructive: {
+                                DEFAULT: "var(--destructive)",
+                                foreground: "var(--destructive-foreground)",
                             },
                         },
                         boxShadow: {
-                            glass: "0 20px 50px -18px hsl(var(--shadow) / 0.45)",
+                            glass: "0 20px 50px -18px color-mix(in srgb, var(--shadow) 45%, transparent)",
                         },
                     },
                 },
@@ -93,6 +97,50 @@
                 </div>
 
                 <div class="flex flex-wrap items-center gap-2">
+                    <button
+                        id="paletteToggleBtn"
+                        class="inline-flex h-10 w-10 items-center justify-center rounded-full border border-border bg-secondary text-secondary-foreground transition-colors hover:bg-secondary/70"
+                        type="button"
+                        title="Switch color palette"
+                        aria-label="Switch color palette (Amber / Orange)"
+                    >
+                        <svg
+                            aria-hidden="true"
+                            viewBox="0 0 24 24"
+                            class="h-4 w-4"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="1.8"
+                        >
+                            <path
+                                d="M12 21a9 9 0 1 1 0-18c4.97 0 9 3.5 9 7.5 0 2.49-2.01 3.5-4 3.5h-2.05a1.5 1.5 0 0 0-1.05 2.56c.4.4.6.9.6 1.44 0 1.1-1.12 2-2.5 2Z"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                            <circle
+                                cx="7.5"
+                                cy="10.5"
+                                r="1.1"
+                                fill="currentColor"
+                                stroke="none"
+                            />
+                            <circle
+                                cx="11.5"
+                                cy="7"
+                                r="1.1"
+                                fill="currentColor"
+                                stroke="none"
+                            />
+                            <circle
+                                cx="15.5"
+                                cy="9"
+                                r="1.1"
+                                fill="currentColor"
+                                stroke="none"
+                            />
+                        </svg>
+                    </button>
+
                     <button
                         id="themeToggleBtn"
                         class="inline-flex h-10 w-10 items-center justify-center rounded-full border border-border bg-secondary text-secondary-foreground transition-colors hover:bg-secondary/70"
