@@ -29,11 +29,16 @@ export function useProgress(user, setStatusMessage) {
     const [progressMap, setProgressMapState] = useState(() =>
         getProgressMap(scopeId),
     );
+    const progressMapRef = useRef(progressMap);
 
     useEffect(() => {
         scopeRef.current = scopeId;
         setProgressMapState(getProgressMap(scopeId));
     }, [scopeId]);
+
+    useEffect(() => {
+        progressMapRef.current = progressMap;
+    }, [progressMap]);
 
     const syncToRemote = useCallback(
         async (mapOverride) => {
@@ -45,7 +50,7 @@ export function useProgress(user, setStatusMessage) {
                 setStatusMessage("pushing changes...");
                 await pushRemoteProgressByUid(
                     user.uid,
-                    mapOverride || progressMap,
+                    mapOverride || progressMapRef.current,
                 );
                 setStatusMessage("synced");
             } catch (error) {
@@ -53,7 +58,7 @@ export function useProgress(user, setStatusMessage) {
                 setStatusMessage("sync failed while pushing");
             }
         },
-        [user, progressMap, setStatusMessage],
+        [user, setStatusMessage],
     );
 
     const syncFromRemote = useCallback(async () => {
