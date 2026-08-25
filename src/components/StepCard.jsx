@@ -30,7 +30,7 @@ export default function StepCard({
 
     return (
         <article className="rounded-2xl border border-border bg-card shadow-sm">
-            <header className="border-b border-border px-4 py-3">
+            <header className="border-b border-border rounded-2xl px-4 py-3">
                 <button
                     type="button"
                     onClick={onToggle}
