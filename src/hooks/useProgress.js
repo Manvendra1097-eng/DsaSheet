@@ -58,23 +58,27 @@ export function useProgress(user, setStatusMessage) {
 
     const syncFromRemote = useCallback(async () => {
         if (!user?.uid) {
-            return;
+            return null;
         }
 
         setStatusMessage("pulling cloud data...");
         try {
             const remote = await pullRemoteProgressByUid(user.uid);
+            let mergedMap = null;
             if (remote?.progressMap && typeof remote.progressMap === "object") {
                 setProgressMapState((prev) => {
                     const merged = mergeProgressMaps(prev, remote.progressMap);
                     setProgressMap(scopeRef.current, merged);
+                    mergedMap = merged;
                     return merged;
                 });
             }
             setStatusMessage("cloud pull complete");
+            return mergedMap;
         } catch (error) {
             console.error(error);
             setStatusMessage("sync failed while pulling");
+            return null;
         }
     }, [user, setStatusMessage]);
 
@@ -85,9 +89,10 @@ export function useProgress(user, setStatusMessage) {
 
         let cancelled = false;
         (async () => {
-            await syncFromRemote();
-            if (!cancelled) {
-                await syncToRemote();
+            // Push the freshly merged map, not the stale pre-pull closure value.
+            const merged = await syncFromRemote();
+            if (!cancelled && merged) {
+                await syncToRemote(merged);
             }
         })();
 
@@ -119,8 +124,8 @@ export function useProgress(user, setStatusMessage) {
             setStatusMessage("login first");
             return;
         }
-        await syncFromRemote();
-        await syncToRemote();
+        const merged = await syncFromRemote();
+        await syncToRemote(merged || undefined);
     }, [user, syncFromRemote, syncToRemote, setStatusMessage]);
 
     return { progressMap, updateProgress, syncNow };
