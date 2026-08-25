@@ -1,7 +1,9 @@
-name: Deploy DSA Tracker
+name: CI/CD
 
 on:
     push:
+        branches: ["main"]
+    pull_request:
         branches: ["main"]
     workflow_dispatch:
 
@@ -15,7 +17,40 @@ concurrency:
     cancel-in-progress: true
 
 jobs:
+    validate:
+        name: Validate
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v4
+
+            - name: Setup Node
+              uses: actions/setup-node@v4
+              with:
+                  node-version: "24"
+
+            - name: Check JS syntax
+              run: |
+                  set -e
+                  find . -name "*.js" -not -path "./.git/*" | while read -r file; do
+                      echo "Checking $file"
+                      node --check "$file"
+                  done
+
+            - name: Ensure real secrets file is not committed
+              run: |
+                  if [ -f src/firebase-config.js ]; then
+                      echo "::error::src/firebase-config.js must never be committed. It is generated at deploy time from secrets."
+                      exit 1
+                  fi
+
+            - name: Ensure example config template exists
+              run: test -f src/firebase-config.example.js
+
     deploy:
+        name: Deploy
+        needs: validate
+        if: github.event_name != 'pull_request'
         environment:
             name: github-pages
             url: ${{ steps.deployment.outputs.page_url }}

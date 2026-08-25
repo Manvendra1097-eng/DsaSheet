@@ -66,7 +66,7 @@ practice since it saves you from having to rotate keys later.
 
 - **Local development:** copy `src/firebase-config.example.js` to `src/firebase-config.js` and
   fill in your real values. This file stays on your machine only.
-- **GitHub Pages deployment:** the workflow at `.github/workflows/deploy.yml` generates
+- **GitHub Pages deployment:** the workflow at `.github/workflows/ci-cd.yml` generates
   `src/firebase-config.js` at deploy time from GitHub Actions secrets, so the real file never
   needs to exist in the repo.
 
@@ -95,7 +95,7 @@ secrets from your local `src/firebase-config.js` in one step.
 2. Ensure default branch is `main`.
 3. In GitHub repo settings, enable Pages using GitHub Actions.
 4. Add the Firebase repository secrets listed above.
-5. Push to `main` and workflow at `.github/workflows/deploy.yml` will deploy automatically.
+5. Push to `main` and workflow at `.github/workflows/ci-cd.yml` will validate then deploy automatically.
 
 ## Re-deploying after changes
 
@@ -108,8 +108,15 @@ Redeploying is automatic — no need to touch GitHub Pages settings again.
     git commit -m "Describe your change"
     git push
     ```
-3. `.github/workflows/deploy.yml` triggers automatically on every push to `main`, regenerates
-   `src/firebase-config.js` from your GitHub secrets, and redeploys to Pages within ~15-20 seconds.
+3. `.github/workflows/ci-cd.yml` runs automatically on every push and pull request:
+    - **validate** job: checks JS syntax on all files and confirms `src/firebase-config.js`
+      (real secrets) was never committed.
+    - **deploy** job: only runs for pushes to `main` (skipped on pull requests), and only if
+      `validate` passes. It regenerates `src/firebase-config.js` from your GitHub secrets and
+      redeploys to Pages within ~15-20 seconds.
+
+Opening a pull request runs `validate` only, so you get a pass/fail check before merging without
+deploying unfinished work.
 
 Check deployment status:
 
@@ -120,7 +127,7 @@ gh run list --repo <owner>/<repo> --limit 3
 Trigger a redeploy manually without pushing new code:
 
 ```bash
-gh workflow run deploy.yml --repo <owner>/<repo>
+gh workflow run ci-cd.yml --repo <owner>/<repo>
 ```
 
 Only re-run the secrets push if you change your **Firebase project values** (not app code) in
