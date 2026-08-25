@@ -97,6 +97,39 @@ secrets from your local `src/firebase-config.js` in one step.
 4. Add the Firebase repository secrets listed above.
 5. Push to `main` and workflow at `.github/workflows/deploy.yml` will deploy automatically.
 
+## Re-deploying after changes
+
+Redeploying is automatic — no need to touch GitHub Pages settings again.
+
+1. Edit files locally as usual.
+2. Commit and push to `main`:
+    ```bash
+    git add -A
+    git commit -m "Describe your change"
+    git push
+    ```
+3. `.github/workflows/deploy.yml` triggers automatically on every push to `main`, regenerates
+   `src/firebase-config.js` from your GitHub secrets, and redeploys to Pages within ~15-20 seconds.
+
+Check deployment status:
+
+```bash
+gh run list --repo <owner>/<repo> --limit 3
+```
+
+Trigger a redeploy manually without pushing new code:
+
+```bash
+gh workflow run deploy.yml --repo <owner>/<repo>
+```
+
+Only re-run the secrets push if you change your **Firebase project values** (not app code) in
+`src/firebase-config.js`:
+
+```bash
+node scripts/push-firebase-secrets.mjs <owner>/<repo>
+```
+
 ## Usage Across Devices
 
 1. Open app and sign in with the same Google account on every device.
