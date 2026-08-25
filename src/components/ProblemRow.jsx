@@ -49,6 +49,9 @@ export default function ProblemRow({
     const lcLink = normalizeLink(problem.lcLink);
     const gfgLink = normalizeLink(problem.gfgLink);
     const cnLink = normalizeLink(problem.cnLink);
+    const videoLink = normalizeLink(problem.video);
+
+    console.log(problem);
 
     return (
         <article
@@ -94,6 +97,16 @@ export default function ProblemRow({
                             rel="noopener noreferrer"
                         >
                             Code360
+                        </a>
+                    )}
+                    {videoLink && (
+                        <a
+                            className="inline-flex items-center rounded-md border border-border bg-background px-2 py-1 text-xs text-teal-800 font-bold hover:bg-secondary"
+                            href={videoLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Solution
                         </a>
                     )}
                 </div>

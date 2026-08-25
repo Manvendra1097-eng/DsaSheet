@@ -18,6 +18,7 @@ const STRIVERS_SHEET = [
                         gfgLink: {
                             "C++": "https://www.geeksforgeeks.org/problems/c-input-output2432/1",
                             Java: "https://www.geeksforgeeks.org/problems/java-inputoutput0118/1",
+                            video: "https://youtu.be/EAR7De6Goz4?t=250",
                         },
                     },
                     {
@@ -47,12 +48,14 @@ const STRIVERS_SHEET = [
                         difficulty: "Easy",
                         lcLink: null,
                         gfgLink: null,
+                        video: "https://youtu.be/EAR7De6Goz4?t=2415",
                     },
                     {
                         title: "For loops",
                         difficulty: "Easy",
                         lcLink: null,
                         gfgLink: null,
+                        video: "https://youtu.be/EAR7De6Goz4?t=3096",
                     },
                     {
                         title: "While loops",
@@ -60,12 +63,14 @@ const STRIVERS_SHEET = [
                         lcLink: null,
                         gfgLink:
                             "https://practice.geeksforgeeks.org/problems/while-loop-printtable-java/1",
+                        video: "https://youtu.be/EAR7De6Goz4?t=3459",
                     },
                     {
                         title: "Functions (Pass by Reference and Value)",
                         difficulty: "Easy",
                         lcLink: null,
                         gfgLink: "https://bit.ly/3DqE0ac",
+                        video: "https://youtu.be/EAR7De6Goz4?t=3677",
                     },
                     {
                         title: "Time Complexity [Learn Basics, and then analyse in next Steps]",
@@ -85,6 +90,7 @@ const STRIVERS_SHEET = [
                         lcLink: null,
                         gfgLink: null,
                         cnLink: "https://www.naukri.com/code360/problems/n-forest_6570177",
+                        video: "https://www.youtube.com/watch?v=tNm_NNSB3_w&list=PLgUwDviBIf0oF6QL8m22w1hIDC1vJ_BHz&index=3",
                     },
                     {
                         title: "Pattern 2",
@@ -92,6 +98,7 @@ const STRIVERS_SHEET = [
                         lcLink: null,
                         gfgLink: null,
                         cnLink: "https://www.naukri.com/code360/problems/n-2-forest_6570178",
+                        video: "https://www.youtube.com/watch?v=tNm_NNSB3_w&list=PLgUwDviBIf0oF6QL8m22w1hIDC1vJ_BHz&index=3",
                     },
                     {
                         title: "Pattern 3",
@@ -99,6 +106,7 @@ const STRIVERS_SHEET = [
                         lcLink: null,
                         gfgLink: null,
                         cnLink: "https://www.naukri.com/code360/problems/n-triangles_6573689",
+                        video: "https://www.youtube.com/watch?v=tNm_NNSB3_w&list=PLgUwDviBIf0oF6QL8m22w1hIDC1vJ_BHz&index=3",
                     },
                     {
                         title: "Pattern 4",
@@ -106,6 +114,7 @@ const STRIVERS_SHEET = [
                         lcLink: null,
                         gfgLink: null,
                         cnLink: "https://www.naukri.com/code360/problems/triangle_6573690",
+                        video: "https://www.youtube.com/watch?v=tNm_NNSB3_w&list=PLgUwDviBIf0oF6QL8m22w1hIDC1vJ_BHz&index=3",
                     },
                     {
                         title: "Pattern 5",
@@ -113,6 +122,7 @@ const STRIVERS_SHEET = [
                         lcLink: null,
                         gfgLink: null,
                         cnLink: "https://www.naukri.com/code360/problems/seeding_6581892",
+                        video: "https://www.youtube.com/watch?v=tNm_NNSB3_w&list=PLgUwDviBIf0oF6QL8m22w1hIDC1vJ_BHz&index=3",
                     },
                     {
                         title: "Pattern 6",
@@ -120,6 +130,7 @@ const STRIVERS_SHEET = [
                         lcLink: null,
                         gfgLink: null,
                         cnLink: "https://www.naukri.com/code360/problems/reverse-number-triangle_6581889",
+                        video: "https://www.youtube.com/watch?v=tNm_NNSB3_w&list=PLgUwDviBIf0oF6QL8m22w1hIDC1vJ_BHz&index=3",
                     },
                     {
                         title: "Pattern 7",
@@ -127,6 +138,7 @@ const STRIVERS_SHEET = [
                         lcLink: null,
                         gfgLink: null,
                         cnLink: "https://www.naukri.com/code360/problems/star-triangle_6573671",
+                        video: "https://www.youtube.com/watch?v=tNm_NNSB3_w&list=PLgUwDviBIf0oF6QL8m22w1hIDC1vJ_BHz&index=3",
                     },
                     {
                         title: "Pattern 8",
@@ -134,6 +146,7 @@ const STRIVERS_SHEET = [
                         lcLink: null,
                         gfgLink: null,
                         cnLink: "https://www.naukri.com/code360/problems/reverse-star-triangle_6573685",
+                        video: "https://www.youtube.com/watch?v=tNm_NNSB3_w&list=PLgUwDviBIf0oF6QL8m22w1hIDC1vJ_BHz&index=3",
                     },
                     {
                         title: "Pattern 9",
@@ -141,6 +154,7 @@ const STRIVERS_SHEET = [
                         lcLink: null,
                         gfgLink: null,
                         cnLink: "https://www.naukri.com/code360/problems/star-diamond_6573686",
+                        video: "https://www.youtube.com/watch?v=tNm_NNSB3_w&list=PLgUwDviBIf0oF6QL8m22w1hIDC1vJ_BHz&index=3",
                     },
                     {
                         title: "Pattern 10",
@@ -148,6 +162,7 @@ const STRIVERS_SHEET = [
                         lcLink: null,
                         gfgLink: null,
                         cnLink: "https://www.naukri.com/code360/problems/rotated-triangle_6573688",
+                        video: "https://www.youtube.com/watch?v=tNm_NNSB3_w&list=PLgUwDviBIf0oF6QL8m22w1hIDC1vJ_BHz&index=3",
                     },
                     {
                         title: "Pattern 11",
@@ -155,6 +170,7 @@ const STRIVERS_SHEET = [
                         lcLink: null,
                         gfgLink: null,
                         cnLink: "https://www.naukri.com/code360/problems/binary-number-triangle_6581890",
+                        video: "https://www.youtube.com/watch?v=tNm_NNSB3_w&list=PLgUwDviBIf0oF6QL8m22w1hIDC1vJ_BHz&index=3",
                     },
                     {
                         title: "Pattern 12",
@@ -162,6 +178,7 @@ const STRIVERS_SHEET = [
                         lcLink: null,
                         gfgLink: null,
                         cnLink: "https://www.naukri.com/code360/problems/number-crown_6581894",
+                        video: "https://www.youtube.com/watch?v=tNm_NNSB3_w&list=PLgUwDviBIf0oF6QL8m22w1hIDC1vJ_BHz&index=3",
                     },
                     {
                         title: "Pattern 13",
@@ -169,6 +186,7 @@ const STRIVERS_SHEET = [
                         lcLink: null,
                         gfgLink: null,
                         cnLink: "https://www.naukri.com/code360/problems/increasing-number-triangle_6581893",
+                        video: "https://www.youtube.com/watch?v=tNm_NNSB3_w&list=PLgUwDviBIf0oF6QL8m22w1hIDC1vJ_BHz&index=3",
                     },
                     {
                         title: "Pattern 14",
@@ -176,6 +194,7 @@ const STRIVERS_SHEET = [
                         lcLink: null,
                         gfgLink: null,
                         cnLink: "https://www.naukri.com/code360/problems/increasing-letter-triangle_6581897",
+                        video: "https://www.youtube.com/watch?v=tNm_NNSB3_w&list=PLgUwDviBIf0oF6QL8m22w1hIDC1vJ_BHz&index=3",
                     },
                     {
                         title: "Pattern 15",
@@ -183,6 +202,7 @@ const STRIVERS_SHEET = [
                         lcLink: null,
                         gfgLink: null,
                         cnLink: "https://www.naukri.com/code360/problems/reverse-letter-triangle_6581906",
+                        video: "https://www.youtube.com/watch?v=tNm_NNSB3_w&list=PLgUwDviBIf0oF6QL8m22w1hIDC1vJ_BHz&index=3",
                     },
                     {
                         title: "Pattern 16",
@@ -190,6 +210,7 @@ const STRIVERS_SHEET = [
                         lcLink: null,
                         gfgLink: null,
                         cnLink: "https://www.naukri.com/code360/problems/alpha-ramp_6581888",
+                        video: "https://www.youtube.com/watch?v=tNm_NNSB3_w&list=PLgUwDviBIf0oF6QL8m22w1hIDC1vJ_BHz&index=3",
                     },
                     {
                         title: "Pattern 17",
@@ -197,6 +218,7 @@ const STRIVERS_SHEET = [
                         lcLink: null,
                         gfgLink: null,
                         cnLink: "https://www.naukri.com/code360/problems/alpha-hill_6581921",
+                        video: "https://www.youtube.com/watch?v=tNm_NNSB3_w&list=PLgUwDviBIf0oF6QL8m22w1hIDC1vJ_BHz&index=3",
                     },
                     {
                         title: "Pattern 18",
@@ -204,6 +226,7 @@ const STRIVERS_SHEET = [
                         lcLink: null,
                         gfgLink: null,
                         cnLink: "https://www.naukri.com/code360/problems/alpha-triangle_6581429",
+                        video: "https://www.youtube.com/watch?v=tNm_NNSB3_w&list=PLgUwDviBIf0oF6QL8m22w1hIDC1vJ_BHz&index=3",
                     },
                     {
                         title: "Pattern 19",
@@ -211,6 +234,7 @@ const STRIVERS_SHEET = [
                         lcLink: null,
                         gfgLink: null,
                         cnLink: "https://www.naukri.com/code360/problems/symmetric-void_6581919",
+                        video: "https://www.youtube.com/watch?v=tNm_NNSB3_w&list=PLgUwDviBIf0oF6QL8m22w1hIDC1vJ_BHz&index=3",
                     },
                     {
                         title: "Pattern 20",
@@ -218,6 +242,7 @@ const STRIVERS_SHEET = [
                         lcLink: null,
                         gfgLink: null,
                         cnLink: "https://www.naukri.com/code360/problems/symmetry_6581914",
+                        video: "https://www.youtube.com/watch?v=tNm_NNSB3_w&list=PLgUwDviBIf0oF6QL8m22w1hIDC1vJ_BHz&index=3",
                     },
                     {
                         title: "Pattern 21",
@@ -225,6 +250,7 @@ const STRIVERS_SHEET = [
                         lcLink: null,
                         gfgLink: null,
                         cnLink: "https://www.naukri.com/code360/problems/ninja-and-the-star-pattern-i_6581920",
+                        video: "https://www.youtube.com/watch?v=tNm_NNSB3_w&list=PLgUwDviBIf0oF6QL8m22w1hIDC1vJ_BHz&index=3",
                     },
                     {
                         title: "Pattern 22",
@@ -232,6 +258,7 @@ const STRIVERS_SHEET = [
                         lcLink: null,
                         gfgLink: null,
                         cnLink: "https://www.naukri.com/code360/problems/ninja-and-the-number-pattern-i_6581959",
+                        video: "https://www.youtube.com/watch?v=tNm_NNSB3_w&list=PLgUwDviBIf0oF6QL8m22w1hIDC1vJ_BHz&index=3",
                     },
                 ],
             },
@@ -271,6 +298,7 @@ const STRIVERS_SHEET = [
                         // lcLink: "https://leetcode.com/problems/reverse-integer/",
                         gfgLink:
                             "https://www.geeksforgeeks.org/problems/reverse-digit0316/1",
+                        video: "https://youtu.be/1xNbjMdbjug?t=930",
                     },
                     {
                         title: "Check Palindrome",
@@ -299,6 +327,7 @@ const STRIVERS_SHEET = [
                         lcLink: null,
                         gfgLink:
                             "https://practice.geeksforgeeks.org/problems/sum-of-all-divisors-from-1-to-n4738/1",
+                        video: "https://youtu.be/1xNbjMdbjug?t=1580",
                     },
                     {
                         title: "Check for Prime",
@@ -307,6 +336,7 @@ const STRIVERS_SHEET = [
                         // gfgLink: "https://practice.geeksforgeeks.org/problems/minimum-number-of-jumps-1587115620/1",
                         gfgLink:
                             "https://www.geeksforgeeks.org/problems/prime-number2314/1",
+                        video: "https://youtu.be/1xNbjMdbjug?t=2381",
                     },
                 ],
             },
@@ -319,6 +349,7 @@ const STRIVERS_SHEET = [
                         difficulty: "Easy",
                         lcLink: null,
                         gfgLink: "https://bit.ly/3y2BiWz",
+                        video: "https://www.youtube.com/watch?v=un6PLygfXrA&list=PLgUwDviBIf0rGlzIn_7rsaR2FQ5e6ZOL9&index=2",
                     },
                     {
                         title: "Print 1 to N using recursion",
@@ -326,12 +357,14 @@ const STRIVERS_SHEET = [
                         lcLink: null,
                         gfgLink:
                             "https://practice.geeksforgeeks.org/problems/print-1-to-n-without-using-loops-1587115620/1",
+                        video: "https://www.youtube.com/watch?v=un6PLygfXrA&list=PLgUwDviBIf0rGlzIn_7rsaR2FQ5e6ZOL9&index=2",
                     },
                     {
                         title: "Print N to 1 using recursion",
                         difficulty: "Easy",
                         lcLink: null,
                         gfgLink: "https://bit.ly/3LOkcBn",
+                        video: "https://www.youtube.com/watch?v=un6PLygfXrA&list=PLgUwDviBIf0rGlzIn_7rsaR2FQ5e6ZOL9&index=2",
                     },
                     {
                         title: "Sum of first N numbers",
@@ -354,6 +387,7 @@ const STRIVERS_SHEET = [
                         lcLink: null,
                         gfgLink:
                             "https://practice.geeksforgeeks.org/problems/reverse-an-array/0",
+                        video: "https://www.youtube.com/watch?v=twuC1F6gLI8&list=PLgUwDviBIf0rGlzIn_7rsaR2FQ5e6ZOL9&index=4",
                     },
                     {
                         title: "Check if a string is palindrome or not",
@@ -367,6 +401,7 @@ const STRIVERS_SHEET = [
                         difficulty: "Easy",
                         lcLink: "https://leetcode.com/problems/fibonacci-number/",
                         gfgLink: "https://bit.ly/3QUkkk2",
+                        video: "https://www.youtube.com/watch?v=kvRjNm4rVBE&list=PLgUwDviBIf0rGlzIn_7rsaR2FQ5e6ZOL9&index=5",
                     },
                 ],
             },
@@ -411,18 +446,21 @@ const STRIVERS_SHEET = [
                         difficulty: "Easy",
                         lcLink: null,
                         gfgLink: "https://bit.ly/3ppA6YJ",
+                        video: "https://youtu.be/HGk_ypEuS24?t=167",
                     },
                     {
                         title: "Bubble Sort",
                         difficulty: "Easy",
                         lcLink: null,
                         gfgLink: "https://bit.ly/3w6yQx8",
+                        video: "https://youtu.be/HGk_ypEuS24?t=1061",
                     },
                     {
                         title: "Insertion Sort",
                         difficulty: "Easy",
                         lcLink: null,
                         gfgLink: "https://bit.ly/3JVcqot",
+                        video: "https://youtu.be/HGk_ypEuS24?t=1900",
                     },
                 ],
             },
@@ -435,12 +473,14 @@ const STRIVERS_SHEET = [
                         difficulty: "Medium",
                         lcLink: null,
                         gfgLink: "https://bit.ly/3A30Anw",
+                        video: "https://youtu.be/ogjf7ORKfd8",
                     },
                     {
                         title: "Recursive Bubble Sort",
                         difficulty: "Easy",
                         lcLink: null,
                         gfgLink: "https://bit.ly/3QV65vI",
+                        video: "https://youtu.be/HGk_ypEuS24?t=1061",
                     },
                     {
                         title: "Recursive Insertion Sort",
@@ -453,6 +493,7 @@ const STRIVERS_SHEET = [
                         difficulty: "Easy",
                         lcLink: null,
                         gfgLink: "https://bit.ly/3dsEbIK",
+                        video: "https://youtu.be/WIrA4YexLRQ",
                     },
                 ],
             },
@@ -472,24 +513,28 @@ const STRIVERS_SHEET = [
                         difficulty: "Easy",
                         lcLink: null,
                         gfgLink: "https://bit.ly/3Pld280",
+                        video: "https://youtu.be/37E9ckMDdTk?t=526",
                     },
                     {
                         title: "Second Largest Element in an Array without sorting",
                         difficulty: "Easy",
                         lcLink: null,
                         gfgLink: "https://bit.ly/3pFvBcN",
+                        video: "https://youtu.be/37E9ckMDdTk?t=526",
                     },
                     {
                         title: "Check if the array is sorted",
                         difficulty: "Easy",
                         lcLink: "https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/#:~:text=Input%3A%20nums%20%3D%20%5B2%2C,no%20rotation)%20to%20make%20nums.",
                         gfgLink: "https://bit.ly/3Ap9U6F",
+                        video: "https://youtu.be/37E9ckMDdTk?t=17224",
                     },
                     {
                         title: "Remove duplicates from Sorted array",
                         difficulty: "Easy",
                         lcLink: "https://leetcode.com/problems/remove-duplicates-from-sorted-array/#:~:text=Input%3A%20nums%20%3D%20%5B0%2C,%2C%203%2C%20and%204%20respectively.",
                         gfgLink: "https://bit.ly/3w7b6ck",
+                        video: "https://youtu.be/37E9ckMDdTk?t=1887",
                     },
                     {
                         title: "Left Rotate an array by one place",
@@ -509,12 +554,14 @@ const STRIVERS_SHEET = [
                         difficulty: "Easy",
                         lcLink: "https://leetcode.com/problems/move-zeroes/",
                         gfgLink: "https://bit.ly/3PrGIjT",
+                        video: "https://youtu.be/wvcQg43_V8U?t=1633",
                     },
                     {
                         title: "Linear Search",
                         difficulty: "Easy",
                         lcLink: null,
                         gfgLink: "https://bit.ly/3KcpHcB",
+                        video: "https://youtu.be/wvcQg43_V8U?t=2465",
                     },
                     {
                         title: "Find the Union",
@@ -534,12 +581,14 @@ const STRIVERS_SHEET = [
                         difficulty: "Easy",
                         lcLink: "https://leetcode.com/problems/max-consecutive-ones/",
                         gfgLink: "https://bit.ly/3piuaAN",
+                        video: "https://youtu.be/bYWLJb3vCWY?t=1124",
                     },
                     {
                         title: "Find the number that appears once, and other numbers twice.",
                         difficulty: "Medium",
                         lcLink: "https://leetcode.com/problems/single-number/",
                         gfgLink: "https://bit.ly/3dudCD8",
+                        video: "https://youtu.be/bYWLJb3vCWY?t=1369",
                     },
                     {
                         title: "Longest subarray with given sum K(positives)",
@@ -548,6 +597,7 @@ const STRIVERS_SHEET = [
                         // gfgLink:
                         //   "https://practice.geeksforgeeks.org/problems/longest-sub-array-with-sum-k0809/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=longest-sub-array-with-sum-k",
                         cnLink: "https://www.naukri.com/code360/problems/longest-subarray-with-sum-k_6682399",
+                        video: "https://www.youtube.com/watch?v=frf7qxiN2qU&feature=youtu.be",
                     },
                     {
                         title: "Longest subarray with sum K (Positives + Negatives)",
@@ -555,6 +605,7 @@ const STRIVERS_SHEET = [
                         lcLink: null,
                         gfgLink:
                             "https://practice.geeksforgeeks.org/problems/longest-sub-array-with-sum-k0809/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=longest-sub-array-with-sum-k",
+                        video: "https://youtu.be/frf7qxiN2qU",
                     },
                 ],
             },
@@ -573,6 +624,7 @@ const STRIVERS_SHEET = [
                         difficulty: "Medium",
                         lcLink: "https://leetcode.com/problems/sort-colors/",
                         gfgLink: "https://bit.ly/3dsROaZ",
+                        video: "https://youtu.be/tp8JIuCXBaU",
                     },
                     {
                         title: "Majority Element (>n/2 times)",
@@ -585,18 +637,21 @@ const STRIVERS_SHEET = [
                         difficulty: "Easy",
                         lcLink: "https://leetcode.com/problems/maximum-subarray/",
                         gfgLink: "https://bit.ly/3dzyloY",
+                        video: "https://youtu.be/AHZpyENo7k4?si=QJpof4R1hHokm1hw",
                     },
                     {
                         title: "Print subarray with maximum subarray sum (extended version of above problem)",
                         difficulty: "Medium",
                         lcLink: null,
                         gfgLink: "https://bit.ly/3SLFFhs",
+                        video: "https://youtu.be/AHZpyENo7k4",
                     },
                     {
                         title: "Stock Buy and Sell",
                         difficulty: "Easy",
                         lcLink: "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/",
                         gfgLink: "https://bit.ly/3Qrx6H9",
+                        video: "https://youtu.be/excAOvwF_Wk",
                     },
                     {
                         title: "Rearrange the array in alternating positive and negative items",
@@ -609,18 +664,21 @@ const STRIVERS_SHEET = [
                         difficulty: "Medium",
                         lcLink: "https://leetcode.com/problems/next-permutation/",
                         gfgLink: "https://bit.ly/3dug78u",
+                        video: "https://youtu.be/JDOXKqF60RQ",
                     },
                     {
                         title: "Leaders in an Array problem",
                         difficulty: "Easy",
                         lcLink: null,
                         gfgLink: "https://bit.ly/3bZqbGc",
+                        video: "https://youtu.be/cHrH9CQ8pmY",
                     },
                     {
                         title: "Longest Consecutive Sequence in an Array",
                         difficulty: "Medium",
                         lcLink: "https://leetcode.com/problems/longest-consecutive-sequence/solution/",
                         gfgLink: "https://bit.ly/3ApytAD",
+                        video: "https://youtu.be/oO5uLE7EUlM",
                     },
                     {
                         title: "Set Matrix Zeros",
@@ -633,12 +691,14 @@ const STRIVERS_SHEET = [
                         difficulty: "Medium",
                         lcLink: "https://leetcode.com/problems/rotate-image/",
                         gfgLink: "https://bit.ly/3PqpeV8",
+                        video: "https://youtu.be/Z0R2u6gd3GU",
                     },
                     {
                         title: "Print the matrix in spiral manner",
                         difficulty: "Medium",
                         lcLink: "https://leetcode.com/problems/spiral-matrix/",
                         gfgLink: "https://bit.ly/3ppEJ53",
+                        video: "https://youtu.be/3Zv-s9UUrFM",
                     },
                     {
                         title: "Count subarrays with given sum",
@@ -646,6 +706,7 @@ const STRIVERS_SHEET = [
                         lcLink: "https://leetcode.com/problems/subarray-sum-equals-k/",
                         gfgLink:
                             "https://www.codingninjas.com/codestudio/problems/subarray-sums-i_1467103?utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_Arrayproblems",
+                        video: "https://www.youtube.com/watch?v=xvNwoz-ufXA&list=PLgUwDviBIf0oF6QL8m22w1hIDC1vJ_BHz&index=32",
                     },
                 ],
             },
@@ -658,6 +719,7 @@ const STRIVERS_SHEET = [
                         difficulty: "Medium",
                         lcLink: "https://leetcode.com/problems/pascals-triangle/",
                         gfgLink: "https://bit.ly/3C95qlR",
+                        video: "https://youtu.be/bR7mQgwQ_o8",
                     },
                     {
                         title: "Majority Element (n/3 times)",
@@ -670,12 +732,14 @@ const STRIVERS_SHEET = [
                         difficulty: "Medium",
                         lcLink: "https://leetcode.com/problems/3sum/",
                         gfgLink: "https://bit.ly/3C9uTvQ",
+                        video: "https://youtu.be/DhFh8Kw7ymk",
                     },
                     {
                         title: "4-Sum Problem",
                         difficulty: "Hard",
                         lcLink: "https://leetcode.com/problems/4sum/",
                         gfgLink: "https://bit.ly/3psQR53",
+                        video: "https://youtu.be/eD95WRfh81c",
                     },
                     {
                         title: "Largest Subarray with 0 Sum",
@@ -694,30 +758,35 @@ const STRIVERS_SHEET = [
                         difficulty: "Medium",
                         lcLink: "https://leetcode.com/problems/merge-intervals/",
                         gfgLink: "https://bit.ly/3zRz904",
+                        video: "https://youtu.be/IexN60k62jo",
                     },
                     {
                         title: "Merge two sorted arrays without extra space",
                         difficulty: "Medium",
                         lcLink: "https://leetcode.com/problems/merge-sorted-array/",
                         gfgLink: "https://bit.ly/3zRzmAo",
+                        video: "https://youtu.be/n7uwj04E0I4",
                     },
                     {
                         title: "Find the repeating and missing number",
                         difficulty: "Hard",
                         lcLink: null,
                         gfgLink: "https://bit.ly/3zWZoCs",
+                        video: "https://youtu.be/2D0D8HE6uak",
                     },
                     {
                         title: "Count Inversions",
                         difficulty: "Hard",
                         lcLink: null,
                         gfgLink: "https://bit.ly/3PtLWLM",
+                        video: "https://youtu.be/AseUmwVNaoY",
                     },
                     {
                         title: "Reverse Pairs",
                         difficulty: "Hard",
                         lcLink: "https://leetcode.com/problems/reverse-pairs/",
                         gfgLink: "https://bit.ly/3SVIpJ6",
+                        video: "https://youtu.be/0e4bZaP3MDI",
                     },
                     {
                         title: "Maximum Product Subarray",
@@ -749,18 +818,21 @@ const STRIVERS_SHEET = [
                         difficulty: "Easy",
                         lcLink: null,
                         gfgLink: "https://bit.ly/3Cf398N",
+                        video: "https://youtu.be/6zhGS79oQ4k",
                     },
                     {
                         title: "Implement Upper Bound",
                         difficulty: "Easy",
                         lcLink: null,
                         gfgLink: "https://bit.ly/3CgDDjE",
+                        video: "https://youtu.be/6zhGS79oQ4k",
                     },
                     {
                         title: "Search Insert Position",
                         difficulty: "Easy",
                         lcLink: "https://leetcode.com/problems/search-insert-position/#:~:text=Search%20Insert%20Position%20%2D%20LeetCode&text=Given%20a%20sorted%20array%20of,(log%20n)%20runtime%20complexity.",
                         gfgLink: "https://bit.ly/3pFDbUN",
+                        video: "https://youtu.be/6zhGS79oQ4k",
                     },
                     {
                         title: "Floor/Ceil in Sorted Array",
@@ -786,18 +858,21 @@ const STRIVERS_SHEET = [
                         difficulty: "Medium",
                         lcLink: "https://leetcode.com/problems/search-in-rotated-sorted-array/",
                         gfgLink: "https://bit.ly/3QH471y",
+                        video: "https://www.youtube.com/watch?v=r3pMQ8-Ad5s&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=64",
                     },
                     {
                         title: "Search in Rotated Sorted Array II",
                         difficulty: "Medium",
                         lcLink: "https://leetcode.com/problems/search-in-rotated-sorted-array-ii/",
                         gfgLink: "https://bit.ly/3Rm85Nb",
+                        video: "https://youtu.be/w2G2W8l__pc",
                     },
                     {
                         title: "Find minimum in Rotated Sorted Array",
                         difficulty: "Medium",
                         lcLink: "https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/",
                         gfgLink: "https://bit.ly/3Az1OJ3",
+                        video: "https://youtu.be/nhEMDKMB44g",
                     },
                     {
                         title: "Find out how many times has an array been rotated",
@@ -810,12 +885,14 @@ const STRIVERS_SHEET = [
                         difficulty: "Easy",
                         lcLink: "https://leetcode.com/problems/single-element-in-a-sorted-array/",
                         gfgLink: "https://bit.ly/3AllLTj",
+                        video: "https://youtu.be/AZOmHuHadxQ",
                     },
                     {
                         title: "Find peak element",
                         difficulty: "Hard",
                         lcLink: "https://leetcode.com/problems/find-peak-element/#:~:text=Find%20Peak%20Element%20%2D%20LeetCode&text=A%20peak%20element%20is%20an,to%20any%20of%20the%20peaks.",
                         gfgLink: "https://bit.ly/3Apsuf3",
+                        video: "https://youtu.be/cXxmbemS6XM",
                     },
                 ],
             },
@@ -828,6 +905,7 @@ const STRIVERS_SHEET = [
                         difficulty: "Medium",
                         lcLink: null,
                         gfgLink: "https://bit.ly/3JXtGcE",
+                        video: "https://youtu.be/Bsv3FPUX_BA",
                     },
                     {
                         title: "Find the Nth root of a number using binary search",
@@ -840,6 +918,7 @@ const STRIVERS_SHEET = [
                         difficulty: "Hard",
                         lcLink: "https://leetcode.com/problems/koko-eating-bananas/",
                         gfgLink: "https://bit.ly/3LSY491",
+                        video: "https://youtu.be/qyfekrNni90",
                     },
                     {
                         title: "Minimum days to make M bouquets",
@@ -867,48 +946,56 @@ const STRIVERS_SHEET = [
                         difficulty: "Easy",
                         lcLink: "https://leetcode.com/problems/kth-missing-positive-number/#:~:text=Given%20an%20array%20arr%20of,13%2C...%5D.",
                         gfgLink: "https://bit.ly/3bUFY9l",
+                        video: "https://youtu.be/uZ0N_hZpyps",
                     },
                     {
                         title: "Aggressive Cows",
                         difficulty: "Hard",
                         lcLink: "https://www.spoj.com/problems/AGGRCOW/",
                         gfgLink: "https://bit.ly/3rBuE5Z",
+                        video: "https://youtu.be/R_Mfw4ew-Vo",
                     },
                     {
                         title: "Book Allocation Problem",
                         difficulty: "Hard",
                         lcLink: "https://bit.ly/3MZQOct",
                         gfgLink: "https://bit.ly/3QMrMxP",
+                        video: "https://www.youtube.com/watch?v=gYmWHvRHu-s&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=69",
                     },
                     {
                         title: "Split array - Largest Sum",
                         difficulty: "Hard",
                         lcLink: "https://leetcode.com/problems/split-array-largest-sum/",
                         gfgLink: "https://bit.ly/3Qx0RGs",
+                        video: "https://www.youtube.com/watch?v=thUd_WJn6wk&list=PLgUwDviBIf0pMFMWuuvDNMAkoQFi-h0ZF&index=20",
                     },
                     {
                         title: "Painter's partition",
                         difficulty: "Hard",
                         lcLink: "https://leetcode.com/problems/painting-the-walls/",
                         gfgLink: null,
+                        video: "https://www.youtube.com/watch?v=thUd_WJn6wk&list=PLgUwDviBIf0pMFMWuuvDNMAkoQFi-h0ZF&index=20",
                     },
                     {
                         title: "Minimize Max Distance to Gas Station",
                         difficulty: "Hard",
                         lcLink: "https://leetcode.com/problems/minimize-max-distance-to-gas-station/",
                         gfgLink: "https://bit.ly/3s40ybG",
+                        video: "https://www.youtube.com/watch?v=kMSBvlZ-_HA&list=PLgUwDviBIf0pMFMWuuvDNMAkoQFi-h0ZF&index=21",
                     },
                     {
                         title: "Median of 2 sorted arrays",
                         difficulty: "Hard",
                         lcLink: "https://leetcode.com/problems/median-of-two-sorted-arrays/",
                         gfgLink: "https://bit.ly/3QPi7Xp",
+                        video: "https://www.youtube.com/watch?v=NTop3VTjmxk&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=65",
                     },
                     {
                         title: "Kth element of 2 sorted arrays",
                         difficulty: "Medium",
                         lcLink: null,
                         gfgLink: "https://bit.ly/3Amcomr",
+                        video: "https://youtu.be/D1oDwWCq50g",
                     },
                 ],
             },
@@ -940,12 +1027,14 @@ const STRIVERS_SHEET = [
                         difficulty: "Hard",
                         lcLink: "https://leetcode.com/problems/find-a-peak-element-ii/",
                         gfgLink: "https://bit.ly/3pEovIA",
+                        video: "https://youtu.be/cXxmbemS6XM",
                     },
                     {
                         title: "Matrix Median",
                         difficulty: "Hard",
                         lcLink: null,
                         gfgLink: "https://bit.ly/3PvwuPk",
+                        video: "https://youtu.be/Q9wXgdxJq48?si=ScI_0uzJh7yg8nrX",
                     },
                 ],
             },
@@ -1142,42 +1231,49 @@ const STRIVERS_SHEET = [
                         difficulty: "Easy",
                         lcLink: "https://leetcode.com/problems/middle-of-the-linked-list/",
                         gfgLink: "https://bit.ly/3dAjkn1",
+                        video: "https://youtu.be/7LjQ57RqgEc?si=ir_rRDio38rhamU_",
                     },
                     {
                         title: "Reverse a LinkedList [Iterative]",
                         difficulty: "Easy",
                         lcLink: "https://leetcode.com/problems/reverse-linked-list/",
                         gfgLink: "https://bit.ly/3zY03mT",
+                        video: "https://youtu.be/D2vI2DNJGd8?si=RCaLSx01qR21IBdh",
                     },
                     {
                         title: "Reverse a LL [Recursive]",
                         difficulty: "Easy",
                         lcLink: "https://leetcode.com/problems/reverse-linked-list/",
                         gfgLink: "https://bit.ly/3zY03mT",
+                        video: "https://youtu.be/D2vI2DNJGd8?si=RCaLSx01qR21IBdh",
                     },
                     {
                         title: "Detect a loop in LL",
                         difficulty: "Medium",
                         lcLink: "https://leetcode.com/problems/linked-list-cycle/",
                         gfgLink: "https://bit.ly/3QN8PLn",
+                        video: "https://youtu.be/wiOo4DC5G",
                     },
                     {
                         title: "Find the starting point in LL",
                         difficulty: "Medium",
                         lcLink: "https://leetcode.com/problems/linked-list-cycle-ii/",
                         gfgLink: "https://bit.ly/3zuBr66",
+                        video: "https://youtu.be/2Kd0KKmmHFc?si=7UreDPRjRvapeVB0",
                     },
                     {
                         title: "Length of Loop in LL",
                         difficulty: "Easy",
                         lcLink: null,
                         gfgLink: "https://bit.ly/3dyXL6m",
+                        video: "https://youtu.be/I4g1qbkTPus?si=ONktpqewvx57T8pF",
                     },
                     {
                         title: "Check if LL is palindrome or not",
                         difficulty: "Medium",
                         lcLink: "https://leetcode.com/problems/palindrome-linked-list/",
                         gfgLink: "https://bit.ly/3JVrnXJ",
+                        video: "https://youtu.be/lRY_G-u_8jk?si=BpM8hRYvXSYyjl-G",
                     },
                     {
                         title: "Segrregate odd and even nodes in LL",
@@ -1190,6 +1286,7 @@ const STRIVERS_SHEET = [
                         difficulty: "Medium",
                         lcLink: "https://leetcode.com/problems/remove-nth-node-from-end-of-list/",
                         gfgLink: "https://bit.ly/3pobNKM",
+                        video: "https://youtu.be/3kMKYQ2wNIU?si=DtFDnPU7z9HMz_GM",
                     },
                     {
                         title: "Delete the middle node of LL",
@@ -1202,6 +1299,7 @@ const STRIVERS_SHEET = [
                         difficulty: "Medium",
                         lcLink: "https://leetcode.com/problems/sort-list/",
                         gfgLink: "https://bit.ly/3dDuLdO",
+                        video: "https://youtu.be/8ocB7a_c-Cc?si=Gv-Y8q8-WyARoV35",
                     },
                     {
                         title: "Sort a LL of 0's 1's and 2's by changing links",
@@ -1238,6 +1336,7 @@ const STRIVERS_SHEET = [
                         difficulty: "Medium",
                         lcLink: null,
                         gfgLink: "https://bit.ly/3zuBr66",
+                        video: "https://youtu.be/Mh0NH_SD92k?si=tCYshBRi1upMqSVz",
                     },
                     {
                         title: "Find pairs with given sum in DLL",
@@ -1250,6 +1349,7 @@ const STRIVERS_SHEET = [
                         difficulty: "Medium",
                         lcLink: null,
                         gfgLink: "https://bit.ly/3FtJUtZ",
+                        video: "https://youtu.be/YJKVTnOJXSY?si=AsZoNUoewetsBjr0",
                     },
                 ],
             },
@@ -1262,18 +1362,21 @@ const STRIVERS_SHEET = [
                         difficulty: "Hard",
                         lcLink: "https://leetcode.com/problems/reverse-nodes-in-k-group/",
                         gfgLink: "https://bit.ly/3zWPiBj",
+                        video: "https://youtu.be/lIar1skcQYI?si=_jFghHKX4eaK36a1",
                     },
                     {
                         title: "Rotate a LL",
                         difficulty: "Medium",
                         lcLink: "https://leetcode.com/problems/rotate-list/description/",
                         gfgLink: "https://bit.ly/3JXvemY",
+                        video: "https://youtu.be/uT7YI7XbTY8?si=ZaChW3a68c_v54Is",
                     },
                     {
                         title: "Flattening of LL",
                         difficulty: "Hard",
                         lcLink: null,
                         gfgLink: "https://bit.ly/3w9TKf8",
+                        video: "https://youtu.be/ykelywHJWLg?si=InMg9MmTHzY22NSR",
                     },
                     {
                         title: "Clone a Linked List with random and next pointer",
@@ -1305,6 +1408,7 @@ const STRIVERS_SHEET = [
                         difficulty: "Medium",
                         lcLink: "https://leetcode.com/problems/powx-n/",
                         gfgLink: "https://bit.ly/3QLc6uD",
+                        video: "https://youtu.be/l0YC3876qxg",
                     },
                     {
                         title: "Count Good numbers",
@@ -1347,12 +1451,14 @@ const STRIVERS_SHEET = [
                         difficulty: "Medium",
                         lcLink: "https://leetcode.com/problems/subsets/",
                         gfgLink: "https://bit.ly/3STXz1t",
+                        video: "https://www.youtube.com/watch?v=b7AYbpM5YrE&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=67",
                     },
                     {
                         title: "Learn All Patterns of Subsequences (Theory)",
                         difficulty: "Medium",
                         lcLink: null,
                         gfgLink: "https://bit.ly/3US225G",
+                        video: "https://www.youtube.com/watch?v=eQCS_v3bw0Q&list=PLgUwDviBIf0rGlzIn_7rsaR2FQ5e6ZOL9&index=7",
                     },
                     {
                         title: "Count all subsequences with sum K",
@@ -1371,12 +1477,14 @@ const STRIVERS_SHEET = [
                         difficulty: "Medium",
                         lcLink: "https://leetcode.com/problems/combination-sum/",
                         gfgLink: "https://bit.ly/3C9bJ91",
+                        video: "https://www.youtube.com/watch?v=OyZFFqQtu98&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=49",
                     },
                     {
                         title: "Combination Sum-II",
                         difficulty: "Medium",
                         lcLink: "https://leetcode.com/problems/combination-sum-ii/",
                         gfgLink: "https://bit.ly/3VgczZ2",
+                        video: "https://www.youtube.com/watch?v=G1fRTGRxXU8&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=50",
                     },
                     {
                         title: "Subset Sum-I",
@@ -1395,6 +1503,7 @@ const STRIVERS_SHEET = [
                         difficulty: "Hard",
                         lcLink: "https://leetcode.com/problems/combination-sum-iii/",
                         gfgLink: "https://bit.ly/3CMZFul",
+                        video: "https://www.youtube.com/watch?v=OyZFFqQtu98&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=49",
                     },
                     {
                         title: "Letter Combinations of a Phone number",
@@ -1413,6 +1522,7 @@ const STRIVERS_SHEET = [
                         difficulty: "Medium",
                         lcLink: "https://leetcode.com/problems/palindrome-partitioning/",
                         gfgLink: "https://bit.ly/3T63roP",
+                        video: "https://youtu.be/_H8V5hJUGd0",
                     },
                     {
                         title: "Word Search",
@@ -1431,6 +1541,7 @@ const STRIVERS_SHEET = [
                         difficulty: "Hard",
                         lcLink: "https://practice.geeksforgeeks.org/problems/rat-in-a-maze-problem/1",
                         gfgLink: "https://bit.ly/3pkqK0g",
+                        video: "https://www.youtube.com/watch?v=bLGZhJlt4y0&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=60",
                     },
                     {
                         title: "Word Break",
@@ -1443,6 +1554,7 @@ const STRIVERS_SHEET = [
                         difficulty: "Hard",
                         lcLink: "https://practice.geeksforgeeks.org/problems/m-coloring-problem-1587115620/1#",
                         gfgLink: "https://bit.ly/3Cepqnv",
+                        video: "https://www.youtube.com/watch?v=wuVwUK25Rfc&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=59",
                     },
                     {
                         title: "Sudoko Solver",
@@ -1481,6 +1593,7 @@ const STRIVERS_SHEET = [
                         lcLink: null,
                         gfgLink:
                             "https://practice.geeksforgeeks.org/problems/check-whether-k-th-bit-is-set-or-not-1587115620/1",
+                        video: "https://youtu.be/nttpF8kwgd4?si=x9o8PsYaA2XVZ9rV",
                     },
                     {
                         title: "Check if a number is odd or not",
@@ -1488,6 +1601,7 @@ const STRIVERS_SHEET = [
                         lcLink: null,
                         gfgLink:
                             "https://practice.geeksforgeeks.org/problems/odd-or-even3618/1",
+                        video: "https://youtu.be/nttpF8kwgd4?si=x9o8PsYaA2XVZ9rV",
                     },
                     {
                         title: "Check if a number is power of 2 or not",
@@ -1495,6 +1609,7 @@ const STRIVERS_SHEET = [
                         lcLink: "https://leetcode.com/problems/power-of-two/",
                         gfgLink:
                             "https://practice.geeksforgeeks.org/problems/power-of-2-1587115620/1",
+                        video: "https://youtu.be/nttpF8kwgd4?si=x9o8PsYaA2XVZ9rV",
                     },
                     {
                         title: "Count the number of set bits",
@@ -1502,6 +1617,7 @@ const STRIVERS_SHEET = [
                         lcLink: null,
                         gfgLink:
                             "https://practice.geeksforgeeks.org/problems/count-total-set-bits-1587115620/1",
+                        video: "https://youtu.be/nttpF8kwgd4?si=x9o8PsYaA2XVZ9rV",
                     },
                     {
                         title: "Set/Unset the rightmost unset bit",
@@ -1509,6 +1625,7 @@ const STRIVERS_SHEET = [
                         lcLink: null,
                         gfgLink:
                             "https://practice.geeksforgeeks.org/problems/set-the-rightmost-unset-bit4436/1",
+                        video: "https://youtu.be/nttpF8kwgd4?si=x9o8PsYaA2XVZ9rV",
                     },
                     {
                         title: "Swap two numbers",
@@ -1516,6 +1633,7 @@ const STRIVERS_SHEET = [
                         lcLink: null,
                         gfgLink:
                             "https://practice.geeksforgeeks.org/problems/swap-two-numbers3844/1",
+                        video: "https://youtu.be/nttpF8kwgd4?si=x9o8PsYaA2XVZ9rV",
                     },
                     {
                         title: "Divide two integers without using multiplication, division and mod operator",
@@ -1550,6 +1668,7 @@ const STRIVERS_SHEET = [
                         lcLink: "https://leetcode.com/problems/subsets/",
                         gfgLink:
                             "https://practice.geeksforgeeks.org/problems/power-set4302/1",
+                        video: "https://www.youtube.com/watch?v=b7AYbpM5YrE&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=67",
                     },
                     {
                         title: "Find xor of numbers from L to R",
@@ -1575,6 +1694,7 @@ const STRIVERS_SHEET = [
                         difficulty: "Easy",
                         lcLink: null,
                         gfgLink: "https://bit.ly/3C165p8",
+                        video: "https://youtu.be/LT7XhV",
                     },
                     {
                         title: "All Divisors of a Number",
@@ -1582,6 +1702,7 @@ const STRIVERS_SHEET = [
                         lcLink: null,
                         gfgLink:
                             "https://practice.geeksforgeeks.org/problems/all-divisors-of-a-number/1?utm_source=youtube&amp;utm_medium=collab_striver_ytdescription&amp;utm_campaign=all-divisors-of-a-number",
+                        video: "https://youtu.be/1xNbjMdbjug?t=1580",
                     },
                     {
                         title: "Sieve of Eratosthenes",
@@ -1594,6 +1715,7 @@ const STRIVERS_SHEET = [
                         difficulty: "Medium",
                         lcLink: null,
                         gfgLink: "https://bit.ly/3SPGzbK",
+                        video: "https://youtu.be/LT7XhVdeRyg?si=6HkjQokJRPTFai21",
                     },
                     {
                         title: "Power(n, x)",
@@ -1621,48 +1743,56 @@ const STRIVERS_SHEET = [
                         difficulty: "Easy",
                         lcLink: null,
                         gfgLink: "https://bit.ly/3QPJ39w",
+                        video: "https://youtu.be/tqQ5fTamIN4?si=ofLt8Zt1ZvhikZ6w",
                     },
                     {
                         title: "Implement Queue using Arrays",
                         difficulty: "Easy",
                         lcLink: null,
                         gfgLink: "https://bit.ly/3C9HLli",
+                        video: "https://youtu.be/tqQ5fTamIN4?si=ofLt8Zt1ZvhikZ6w",
                     },
                     {
                         title: "Implement Stack using Queue",
                         difficulty: "Medium",
                         lcLink: "https://leetcode.com/problems/implement-stack-using-queues/",
                         gfgLink: "https://bit.ly/3PrRI0F",
+                        video: "https://youtu.be/tqQ5fTamIN4?si=ofLt8Zt1ZvhikZ6w",
                     },
                     {
                         title: "Implement Queue using Stack",
                         difficulty: "Medium",
                         lcLink: "https://leetcode.com/problems/implement-queue-using-stacks/",
                         gfgLink: "https://bit.ly/3Quthki",
+                        video: "https://youtu.be/tqQ5fTamIN4?si=ofLt8Zt1ZvhikZ6w",
                     },
                     {
                         title: "Implement stack using Linkedlist",
                         difficulty: "Easy",
                         lcLink: null,
                         gfgLink: "https://bit.ly/3w6PwVv",
+                        video: "https://youtu.be/tqQ5fTamIN4?si=ofLt8Zt1ZvhikZ6w",
                     },
                     {
                         title: "Implement queue using Linkedlist",
                         difficulty: "Medium",
                         lcLink: null,
                         gfgLink: "https://bit.ly/3PA7mY0",
+                        video: "https://youtu.be/tqQ5fTamIN4?si=ofLt8Zt1ZvhikZ6w",
                     },
                     {
                         title: "Check for balanced paranthesis",
                         difficulty: "Medium",
                         lcLink: "https://leetcode.com/problems/valid-parentheses/",
                         gfgLink: "https://bit.ly/3An2IIo",
+                        video: "https://youtu.be/xwjS0iZhw4I?si=UoyKpFn4Q3nf5h2R",
                     },
                     {
                         title: "Implement Min Stack",
                         difficulty: "Medium",
                         lcLink: "https://leetcode.com/problems/min-stack/",
                         gfgLink: "https://bit.ly/3JVhFoe",
+                        video: "https://youtu.be/NdDIaH91P0g?si=4_Jbsq5trFvfSdUY",
                     },
                 ],
             },
@@ -1675,30 +1805,35 @@ const STRIVERS_SHEET = [
                         difficulty: "Medium",
                         lcLink: null,
                         gfgLink: "https://bit.ly/3JWYj1P",
+                        video: "https://youtu.be/4pIc9UBHJtk?si=ryeVvQWpCgwbTQrh",
                     },
                     {
                         title: "Prefix to Infix Conversion",
                         difficulty: "Medium",
                         lcLink: null,
                         gfgLink: "https://bit.ly/3FwxK3j",
+                        video: "https://youtu.be/4pIc9UBHJtk?si=ryeVvQWpCgwbTQrh",
                     },
                     {
                         title: "Prefix to Postfix Conversion",
                         difficulty: "Medium",
                         lcLink: null,
                         gfgLink: "https://bit.ly/3DrwCLI",
+                        video: "https://youtu.be/4pIc9UBHJtk?si=0pWtyDC1GhbiYP3P",
                     },
                     {
                         title: "Postfix to Prefix Conversion",
                         difficulty: "Medium",
                         lcLink: null,
                         gfgLink: "https://bit.ly/3UaWJxk",
+                        video: "https://youtu.be/4pIc9UBHJtk?si=0pWtyDC1GhbiYP3P",
                     },
                     {
                         title: "Postfix to Infix",
                         difficulty: "Medium",
                         lcLink: null,
                         gfgLink: "https://bit.ly/3sNZ1a2",
+                        video: "https://youtu.be/4pIc9UBHJtk?si=0pWtyDC1GhbiYP3P",
                     },
                     {
                         title: "Convert Infix To Prefix Notation",
@@ -1718,12 +1853,14 @@ const STRIVERS_SHEET = [
                         difficulty: "Easy",
                         lcLink: "https://leetcode.com/problems/next-greater-element-i/",
                         gfgLink: "https://bit.ly/3QNPQAs",
+                        video: "https://youtu.be/e7XQLtOQM3I?si=QdcHpTtx6gAHsext",
                     },
                     {
                         title: "Next Greater Element 2",
                         difficulty: "Medium",
                         lcLink: "https://leetcode.com/problems/next-greater-element-ii/",
                         gfgLink: "https://bit.ly/3DLe7TX",
+                        video: "https://youtu.be/7PrncD7v9YQ?si=UkBc7eVy9HGlBpeW",
                     },
                     {
                         title: "Next Smaller Element",
@@ -1742,36 +1879,42 @@ const STRIVERS_SHEET = [
                         difficulty: "Hard",
                         lcLink: "https://leetcode.com/problems/trapping-rain-water/",
                         gfgLink: "https://bit.ly/3AqMa1W",
+                        video: "https://youtu.be/1_5VuquLbXg?si=NFG6df318_6OtGvg",
                     },
                     {
                         title: "Sum of subarray minimum",
                         difficulty: "Medium",
                         lcLink: "https://leetcode.com/problems/sum-of-subarray-minimums/",
                         gfgLink: "https://bit.ly/3yS5XpZ",
+                        video: "https://youtu.be/v0e8p9JCgRc?si=XAU7ekECgS5nboRw",
                     },
                     {
                         title: "Asteroid Collision",
                         difficulty: "Medium",
                         lcLink: "https://leetcode.com/problems/asteroid-collision/",
                         gfgLink: "https://bit.ly/3Tpi0Tw",
+                        video: "https://youtu.be/_eYGqw_VDR4?si=YyxibcHq800RqgIQ",
                     },
                     {
                         title: "Sum of subarray ranges",
                         difficulty: "Medium",
                         lcLink: "https://leetcode.com/problems/sum-of-subarray-ranges/",
                         gfgLink: "https://bit.ly/3SdfheS",
+                        video: "https://youtu.be/gIrMptNPf5M?si=Q_GHuBvzZVs27X_U",
                     },
                     {
                         title: "Remove k Digits",
                         difficulty: "Medium",
                         lcLink: "https://leetcode.com/problems/remove-k-digits/",
                         gfgLink: "https://bit.ly/3pl6taP",
+                        video: "https://youtu.be/jmbuRzYPGrg?si=WN387gwQ7aXWkUao",
                     },
                     {
                         title: "Largest rectangle in a histogram",
                         difficulty: "Medium",
                         lcLink: "https://leetcode.com/problems/largest-rectangle-in-histogram/",
                         gfgLink: "https://bit.ly/3AnVYd5",
+                        video: "https://youtu.be/Bzat9vgD0fs?si=DiBlLejXcr6EJoyB",
                     },
                     {
                         title: "Maximal Rectangles",
@@ -1790,18 +1933,21 @@ const STRIVERS_SHEET = [
                         difficulty: "Hard",
                         lcLink: "https://leetcode.com/problems/sliding-window-maximum/",
                         gfgLink: "https://bit.ly/3w7SSri",
+                        video: "https://youtu.be/NwBvene4Imo?si=eU1PY-bcQfk5wdog",
                     },
                     {
                         title: "Stock span problem",
                         difficulty: "Medium",
                         lcLink: "https://leetcode.com/problems/online-stock-span/",
                         gfgLink: "https://bit.ly/3dzHopW",
+                        video: "https://youtu.be/eay-zoSRkVc?si=deNNe5i38BOAntha",
                     },
                     {
                         title: "The Celebrity Problem",
                         difficulty: "Hard",
                         lcLink: "https://leetcode.com/accounts/login/?next=/problems/find-the-celebrity/",
                         gfgLink: "https://bit.ly/3dC9IIB",
+                        video: "https://youtu.be/cEadsbTeze4?si=olXYfOs7l-SEn2zl",
                     },
                     {
                         title: "LRU cache (IMPORTANT)",
@@ -1814,6 +1960,7 @@ const STRIVERS_SHEET = [
                         difficulty: "Hard",
                         lcLink: "https://leetcode.com/problems/lfu-cache/",
                         gfgLink: "https://bit.ly/3fpYDLQ",
+                        video: "https://www.youtube.com/watch?v=0PSB9y8ehbk&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=79",
                     },
                 ],
             },
@@ -1833,24 +1980,28 @@ const STRIVERS_SHEET = [
                         difficulty: "Medium",
                         lcLink: "https://leetcode.com/problems/longest-substring-without-repeating-characters/",
                         gfgLink: "https://bit.ly/3wegomm",
+                        video: "https://youtu.be/-zSxTJkcdAo?si=I2zfR-vlDMg0zU9z",
                     },
                     {
                         title: "Max Consecutive Ones III",
                         difficulty: "Medium",
                         lcLink: "https://leetcode.com/problems/max-consecutive-ones-iii/",
                         gfgLink: "https://bit.ly/3RjRcCO",
+                        video: "https://youtu.be/3E4JBHSLpYk?si=SoOW64pP6otEKxBw",
                     },
                     {
                         title: "Fruit Into Baskets",
                         difficulty: "Medium",
                         lcLink: null,
                         gfgLink: "https://bit.ly/3D6d94w",
+                        video: "https://youtu.be/e3bs0uA1NhQ?si=gR8pO62u-nJeFAXk",
                     },
                     {
                         title: "longest repeating character replacement",
                         difficulty: "Medium",
                         lcLink: "https://leetcode.com/problems/longest-repeating-character-replacement/",
                         gfgLink: "https://bit.ly/3WhN89U",
+                        video: "https://youtu.be/_eNhaDCr6P0?si=pBWcEjozF5poom0p",
                     },
                     {
                         title: "Binary subarray with sum",
@@ -1863,6 +2014,7 @@ const STRIVERS_SHEET = [
                         difficulty: "Medium",
                         lcLink: "https://leetcode.com/problems/count-number-of-nice-subarrays/",
                         gfgLink: "https://bit.ly/3xZvUUc",
+                        video: "https://youtu.be/j_QOv9OT9Og?si=Oq5-5hyFkzVSOZpP",
                     },
                     {
                         title: "Number of substring containing all three characters",
@@ -1887,6 +2039,7 @@ const STRIVERS_SHEET = [
                         difficulty: "Medium",
                         lcLink: "https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/",
                         gfgLink: "https://bit.ly/3T12HRu",
+                        video: "https://youtu.be/teM9ZsVRQyc?si=Kh0_u6aCkkBU3Q33",
                     },
                     {
                         title: "Subarray with k different integers",
@@ -1900,6 +2053,7 @@ const STRIVERS_SHEET = [
                         lcLink: "https://leetcode.com/problems/minimum-window-substring/",
                         gfgLink:
                             "https://practice.geeksforgeeks.org/problems/smallest-window-in-a-string-containing-all-the-characters-of-another-string-1587115621/1",
+                        video: "https://youtu.be/WJaij9ffOIY?si=-xnsWIH84zWU0ICd",
                     },
                     {
                         title: "Minimum Window Subsequence",
@@ -1955,6 +2109,7 @@ const STRIVERS_SHEET = [
                         difficulty: "Easy",
                         lcLink: "https://leetcode.com/problems/kth-largest-element-in-an-array/",
                         gfgLink: "https://bit.ly/3Avss5k",
+                        video: "https://youtu.be/37E9ckMDdTk?t=526",
                     },
                     {
                         title: "Kth smallest element in an array [use priority queue]",
@@ -2016,6 +2171,7 @@ const STRIVERS_SHEET = [
                         difficulty: "Easy",
                         lcLink: "https://leetcode.com/problems/kth-largest-element-in-a-stream/#:~:text=Implement%20KthLargest%20class%3A,largest%20element%20in%20the%20stream.",
                         gfgLink: "https://bit.ly/3JZPqEV",
+                        video: "https://youtu.be/37E9ckMDdTk?t=526",
                     },
                     {
                         title: "Maximum Sum Combination",
@@ -2053,12 +2209,14 @@ const STRIVERS_SHEET = [
                         difficulty: "Easy",
                         lcLink: "https://leetcode.com/problems/assign-cookies/",
                         gfgLink: "https://bit.ly/3Wl3PBd",
+                        video: "https://youtu.be/DIX2p7vb9co?si=GofAIDimue-Av0Fi",
                     },
                     {
                         title: "Fractional Knapsack Problem",
                         difficulty: "Medium",
                         lcLink: "https://practice.geeksforgeeks.org/problems/fractional-knapsack-1587115620/1",
                         gfgLink: "https://bit.ly/3PsqOFL",
+                        video: "https://youtu.be/1ibsQrnuEEg?si=8R2By3wpHo0zZVHE",
                     },
                     {
                         title: "Greedy algorithm to find minimum number of coins",
@@ -2071,12 +2229,14 @@ const STRIVERS_SHEET = [
                         difficulty: "Easy",
                         lcLink: "https://leetcode.com/problems/lemonade-change/",
                         gfgLink: "https://bit.ly/3DoFGRx",
+                        video: "https://youtu.be/n_tmibEhO6Q?si=q1NW8MfPy0QU6fIl",
                     },
                     {
                         title: "Valid Paranthesis Checker",
                         difficulty: "Medium",
                         lcLink: "https://leetcode.com/problems/valid-parenthesis-string/",
                         gfgLink: "https://bit.ly/3K6ulZA",
+                        video: "https://youtu.be/cHT6sG_hUZI?si=XRHeyh7jOaLaTy3g",
                     },
                 ],
             },
@@ -2089,12 +2249,14 @@ const STRIVERS_SHEET = [
                         difficulty: "Medium",
                         lcLink: "https://practice.geeksforgeeks.org/problems/n-meetings-in-one-room-1587115620/1",
                         gfgLink: "https://bit.ly/3A6Ob1Y",
+                        video: "https://youtu.be/mKfhTotEguk?si=2RELeq18mpmIIN3Q",
                     },
                     {
                         title: "Jump Game",
                         difficulty: "Medium",
                         lcLink: "https://leetcode.com/problems/jump-game/",
                         gfgLink: "https://bit.ly/3AbFYKe",
+                        video: "https://youtu.be/tZAa_jJ3SwQ?si=voKd7n9VTLDRRNzJ",
                     },
                     {
                         title: "Jump Game 2",
@@ -2107,24 +2269,28 @@ const STRIVERS_SHEET = [
                         difficulty: "Medium",
                         lcLink: "https://practice.geeksforgeeks.org/problems/minimum-platforms-1587115620/1#",
                         gfgLink: "https://bit.ly/3bXX5Hm",
+                        video: "https://youtu.be/AsGzwR_FWok?si=165acXU_dtqOHuo9",
                     },
                     {
                         title: "Job sequencing Problem",
                         difficulty: "Medium",
                         lcLink: "https://practice.geeksforgeeks.org/problems/job-sequencing-problem-1587115620/1#",
                         gfgLink: "https://bit.ly/3Pttpzj",
+                        video: "https://youtu.be/QbwltemZbRg?si=wvcemJ5BLPlTRmkG",
                     },
                     {
                         title: "Candy",
                         difficulty: "Hard",
                         lcLink: "https://leetcode.com/problems/candy/",
                         gfgLink: "https://bit.ly/3h14wzm",
+                        video: "https://youtu.be/IIqVFvKE6RY?si=EjmuXZJNLQLUkEd7",
                     },
                     {
                         title: "Program for Shortest Job First (or SJF) CPU Scheduling",
                         difficulty: "Medium",
                         lcLink: null,
                         gfgLink: "https://bit.ly/3DYCIFb",
+                        video: "https://youtu.be/3-QbX1iDbXs?si=IH8QZUblr01F7UoQ",
                     },
                     {
                         title: "Program for Least Recently Used (LRU) Page Replacement Algorithm",
@@ -2137,18 +2303,21 @@ const STRIVERS_SHEET = [
                         difficulty: "Medium",
                         lcLink: "https://leetcode.com/problems/insert-interval/",
                         gfgLink: "https://bit.ly/3VeNtc1",
+                        video: "https://youtu.be/xxRE-46OCC8?si=a7aPuIw16zDx2lAa",
                     },
                     {
                         title: "Merge Intervals",
                         difficulty: "Medium",
                         lcLink: "https://leetcode.com/problems/merge-intervals/",
                         gfgLink: "https://bit.ly/3K6pRlt",
+                        video: "https://www.youtube.com/watch?v=2JzRBPFYbKE&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=6",
                     },
                     {
                         title: "Non-overlapping Intervals",
                         difficulty: "Medium",
                         lcLink: "https://leetcode.com/problems/non-overlapping-intervals/",
                         gfgLink: "https://bit.ly/3UM6liN",
+                        video: "https://youtu.be/HDHQ8lAWakY?si=JVtLqboGdpUTOVjf",
                     },
                 ],
             },
@@ -2168,6 +2337,7 @@ const STRIVERS_SHEET = [
                         difficulty: "Easy",
                         lcLink: null,
                         gfgLink: "https://bit.ly/3EsRmTM",
+                        video: "https://youtu.be/_ANrF3FJm7I",
                     },
                     {
                         title: "Binary Tree Representation in C++",
@@ -2180,6 +2350,7 @@ const STRIVERS_SHEET = [
                         difficulty: "Easy",
                         lcLink: null,
                         gfgLink: "https://bit.ly/3gn5Soh",
+                        video: "https://youtu.be/hyLyW7rP24I",
                     },
                     {
                         title: "Binary Tree Traversals in Binary Tree",
@@ -2192,54 +2363,63 @@ const STRIVERS_SHEET = [
                         difficulty: "Easy",
                         lcLink: "https://leetcode.com/problems/binary-tree-preorder-traversal/",
                         gfgLink: "https://bit.ly/3Cb4VIh",
+                        video: "https://youtu.be/RlUu72JrOCQ",
                     },
                     {
                         title: "Inorder Traversal of Binary Tree",
                         difficulty: "Easy",
                         lcLink: "https://leetcode.com/problems/binary-tree-inorder-traversal/",
                         gfgLink: "https://bit.ly/3QzNDbU",
+                        video: "https://youtu.be/Z_NEgBgbRVI",
                     },
                     {
                         title: "Post-order Traversal of Binary Tree",
                         difficulty: "Easy",
                         lcLink: "https://leetcode.com/problems/binary-tree-postorder-traversal/",
                         gfgLink: "https://bit.ly/3SZauQ4",
+                        video: "https://youtu.be/2YBhNLodD8Q",
                     },
                     {
                         title: "Level order Traversal / Level order traversal in spiral form",
                         difficulty: "Easy",
                         lcLink: "https://leetcode.com/problems/binary-tree-level-order-traversal/",
                         gfgLink: "https://bit.ly/3K6t9VR",
+                        video: "https://youtu.be/EoAsWbO7sqg",
                     },
                     {
                         title: "Iterative Preorder Traversal of Binary Tree",
                         difficulty: "Easy",
                         lcLink: "https://leetcode.com/problems/binary-tree-preorder-traversal/",
                         gfgLink: "https://bit.ly/3Cb4VIh",
+                        video: "https://youtu.be/Bfqd8BsPVuw",
                     },
                     {
                         title: "Iterative Inorder Traversal of Binary Tree",
                         difficulty: "Easy",
                         lcLink: "https://leetcode.com/problems/binary-tree-inorder-traversal/",
                         gfgLink: "https://bit.ly/3QzNDbU",
+                        video: "https://youtu.be/lxTGsVXjwvM",
                     },
                     {
                         title: "Post-order Traversal of Binary Tree using 2 stack",
                         difficulty: "Easy",
                         lcLink: "https://leetcode.com/problems/binary-tree-postorder-traversal/",
                         gfgLink: "https://bit.ly/3Cb5Wjz",
+                        video: "https://youtu.be/2YBhNLodD8Q",
                     },
                     {
                         title: "Post-order Traversal of Binary Tree using 1 stack",
                         difficulty: "Medium",
                         lcLink: "https://leetcode.com/problems/binary-tree-postorder-traversal/",
                         gfgLink: "https://bit.ly/3SZauQ4",
+                        video: "https://youtu.be/NzIGLLwZBS8",
                     },
                     {
                         title: "Preorder, Inorder, and Postorder Traversal in one Traversal",
                         difficulty: "Medium",
                         lcLink: null,
                         gfgLink: "https://bit.ly/3T3oW9M",
+                        video: "https://youtu.be/ySp2epYvgTE",
                     },
                 ],
             },
@@ -2264,18 +2444,21 @@ const STRIVERS_SHEET = [
                         difficulty: "Medium",
                         lcLink: "https://leetcode.com/problems/diameter-of-binary-tree/",
                         gfgLink: "https://bit.ly/3wcfG9l",
+                        video: "https://youtu.be/Rezetez59Nk",
                     },
                     {
                         title: "Maximum path sum",
                         difficulty: "Hard",
                         lcLink: "https://leetcode.com/problems/binary-tree-maximum-path-sum/",
                         gfgLink: "https://bit.ly/3QAFjbW",
+                        video: "https://youtu.be/WszrfSwMz58",
                     },
                     {
                         title: "Check if two trees are identical or not",
                         difficulty: "Medium",
                         lcLink: "https://leetcode.com/problems/same-tree/",
                         gfgLink: "https://bit.ly/3c2K52Z",
+                        video: "https://youtu.be/BhuvF_-PWS0",
                     },
                     {
                         title: "Zig Zag Traversal of Binary Tree",
@@ -2288,12 +2471,14 @@ const STRIVERS_SHEET = [
                         difficulty: "Medium",
                         lcLink: "https://leetcode.com/problems/boundary-of-binary-tree/",
                         gfgLink: "https://bit.ly/3AsfgOK",
+                        video: "https://youtu.be/0ca1nvR0be4",
                     },
                     {
                         title: "Vertical Order Traversal of Binary Tree",
                         difficulty: "Easy",
                         lcLink: "https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree/",
                         gfgLink: "https://bit.ly/3pqu1er",
+                        video: "https://youtu.be/q_a6lpbKJdw",
                     },
                     {
                         title: "Top View of Binary Tree",
@@ -2312,12 +2497,14 @@ const STRIVERS_SHEET = [
                         difficulty: "Medium",
                         lcLink: "https://leetcode.com/problems/binary-tree-right-side-view/",
                         gfgLink: "https://bit.ly/3PCqyE9",
+                        video: "https://youtu.be/KV4mRzTjlAk",
                     },
                     {
                         title: "Symmetric Binary Tree",
                         difficulty: "Medium",
                         lcLink: "https://leetcode.com/problems/symmetric-tree/",
                         gfgLink: "https://bit.ly/3PCqBzP",
+                        video: "https://www.youtube.com/watch?v=nKggNAiEpBE",
                     },
                 ],
             },
@@ -2384,6 +2571,7 @@ const STRIVERS_SHEET = [
                         difficulty: "Hard",
                         lcLink: "https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/",
                         gfgLink: "https://bit.ly/3wbFiTI",
+                        video: "https://youtu.be/LgLRTaEMRVc",
                     },
                     {
                         title: "Serialize and deserialize Binary Tree",
@@ -2396,12 +2584,14 @@ const STRIVERS_SHEET = [
                         difficulty: "Medium",
                         lcLink: "https://leetcode.com/problems/binary-tree-inorder-traversal/",
                         gfgLink: "https://bit.ly/3EORTB9",
+                        video: "https://youtu.be/80Zug6D1_r4",
                     },
                     {
                         title: "Morris Inorder Traversal of a Binary Tree",
                         difficulty: "Medium",
                         lcLink: "https://leetcode.com/problems/binary-tree-inorder-traversal/",
                         gfgLink: "https://bit.ly/3tJQiGk",
+                        video: "https://youtu.be/80Zug6D1_r4",
                     },
                     {
                         title: "Flatten Binary Tree to LinkedList",
@@ -2434,6 +2624,7 @@ const STRIVERS_SHEET = [
                         lcLink: "https://leetcode.com/problems/search-in-a-binary-search-tree/",
                         gfgLink:
                             "https://practice.geeksforgeeks.org/problems/search-a-node-in-bst/1",
+                        video: "https://youtu.be/KcNt6v_56cc",
                     },
                     {
                         title: "Find Min/Max in BST",
@@ -2460,6 +2651,7 @@ const STRIVERS_SHEET = [
                         difficulty: "Easy",
                         lcLink: null,
                         gfgLink: "https://bit.ly/3TSbXXE",
+                        video: "https://youtu.be/xm_W1ub-K-w",
                     },
                     {
                         title: "Insert a given Node in Binary Search Tree",
@@ -2481,6 +2673,7 @@ const STRIVERS_SHEET = [
                         lcLink: "https://leetcode.com/problems/kth-smallest-element-in-a-bst/",
                         gfgLink:
                             "https://practice.geeksforgeeks.org/problems/find-k-th-smallest-element-in-bst/1#:~:text=Find%20the%20Kth%20Smallest%20element%20in%20the%20BST.&text=Your%20Task%3A,such%20element%20exists%20return%20%2D1.",
+                        video: "https://youtu.be/37E9ckMDdTk?t=526",
                     },
                     {
                         title: "Check if a tree is a BST or BT",
@@ -2501,6 +2694,7 @@ const STRIVERS_SHEET = [
                         lcLink: "https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/",
                         gfgLink:
                             "https://practice.geeksforgeeks.org/problems/preorder-to-postorder4423/1",
+                        video: "https://youtu.be/RlUu72JrOCQ",
                     },
                     {
                         title: "Inorder Successor/Predecessor in BST",
@@ -2508,6 +2702,7 @@ const STRIVERS_SHEET = [
                         lcLink: "https://leetcode.com/problems/inorder-successor-in-bst/",
                         gfgLink:
                             "https://practice.geeksforgeeks.org/problems/predecessor-and-successor/1",
+                        video: "https://youtu.be/SXKAD2svfmI",
                     },
                     {
                         title: "Merge 2 BST's",
@@ -2515,6 +2710,7 @@ const STRIVERS_SHEET = [
                         lcLink: "https://leetcode.com/problems/binary-search-tree-iterator/",
                         gfgLink:
                             "https://practice.geeksforgeeks.org/problems/merge-two-bst-s/1",
+                        video: "https://youtu.be/D2jMcmxU4bs",
                     },
                     {
                         title: "Two Sum In BST | Check if there exists a pair with Sum K",
@@ -2522,12 +2718,14 @@ const STRIVERS_SHEET = [
                         lcLink: "https://leetcode.com/problems/two-sum-iv-input-is-a-bst/",
                         gfgLink:
                             "https://practice.geeksforgeeks.org/problems/find-a-pair-with-given-target-in-bst/1",
+                        video: "https://youtu.be/ssL3sHwPeb4",
                     },
                     {
                         title: "Recover BST | Correct BST with two nodes swapped",
                         difficulty: "Hard",
                         lcLink: "https://leetcode.com/problems/recover-binary-search-tree/",
                         gfgLink: "https://bit.ly/3PBJwea",
+                        video: "https://youtu.be/ZWGW7FminDM",
                     },
                     {
                         title: "Largest BST in Binary Tree",
@@ -2535,6 +2733,7 @@ const STRIVERS_SHEET = [
                         lcLink: null,
                         gfgLink:
                             "https://practice.geeksforgeeks.org/problems/largest-bst/1",
+                        video: "https://youtu.be/X0oXMdtUDwo",
                     },
                 ],
             },
@@ -2560,12 +2759,14 @@ const STRIVERS_SHEET = [
                         difficulty: "Easy",
                         lcLink: null,
                         gfgLink: "https://bit.ly/3dGuwyv",
+                        video: "https://youtu.be/3oI-34aPMWM",
                     },
                     {
                         title: "Graph Representation | Java",
                         difficulty: "Easy",
                         lcLink: null,
                         gfgLink: "https://bit.ly/3dGuwyv",
+                        video: "https://youtu.be/3oI-34aPMWM",
                     },
                     {
                         title: "Connected Components | Logic Explanation",
@@ -2586,6 +2787,7 @@ const STRIVERS_SHEET = [
                         lcLink: "https://practice.geeksforgeeks.org/problems/depth-first-traversal-for-a-graph/1",
                         gfgLink:
                             "https://practice.geeksforgeeks.org/problems/depth-first-traversal-for-a-graph/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=dfs_of_graph",
+                        video: "https://youtu.be/Qzf1a--rhp8",
                     },
                 ],
             },
@@ -2599,6 +2801,7 @@ const STRIVERS_SHEET = [
                         lcLink: "https://leetcode.com/problems/number-of-provinces/#:~:text=A%20province%20is%20a%20group,the%20total%20number%20of%20provinces.",
                         gfgLink:
                             "https://practice.geeksforgeeks.org/problems/number-of-provinces/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=number_of_provinces",
+                        video: "https://youtu.be/ACzkVtewUYA",
                     },
                     {
                         title: "Connected Components Problem in Matrix",
@@ -2611,6 +2814,7 @@ const STRIVERS_SHEET = [
                         difficulty: "Medium",
                         lcLink: "https://leetcode.com/problems/rotting-oranges/",
                         gfgLink: "https://bit.ly/3R4htWb",
+                        video: "https://www.youtube.com/watch?v=yf3oUhkvqA0",
                     },
                     {
                         title: "Flood fill",
@@ -2645,6 +2849,7 @@ const STRIVERS_SHEET = [
                         difficulty: "Hard",
                         lcLink: "https://leetcode.com/problems/surrounded-regions/",
                         gfgLink: "https://bit.ly/3T3oDLR",
+                        video: "https://youtu.be/rxKcepXQgU4",
                     },
                     {
                         title: "Number of Enclaves [flood fill implementation - multisource]",
@@ -2680,6 +2885,7 @@ const STRIVERS_SHEET = [
                         lcLink: "https://leetcode.com/problems/is-graph-bipartite/",
                         gfgLink:
                             "https://practice.geeksforgeeks.org/problems/bipartite-graph/1",
+                        video: "https://youtu.be/KG5YFfR0j8A",
                     },
                     {
                         title: "Cycle Detection in Directed Graph (DFS)",
@@ -2687,6 +2893,7 @@ const STRIVERS_SHEET = [
                         lcLink: "https://leetcode.com/problems/course-schedule-ii/discuss/293048/detecting-cycle-in-directed-graph-problem",
                         gfgLink:
                             "https://practice.geeksforgeeks.org/problems/detect-cycle-in-a-directed-graph/1",
+                        video: "https://youtu.be/9twcmtQj4DU",
                     },
                 ],
             },
@@ -2700,12 +2907,14 @@ const STRIVERS_SHEET = [
                         lcLink: null,
                         gfgLink:
                             "https://practice.geeksforgeeks.org/problems/topological-sort/1",
+                        video: "https://youtu.be/5lZ0iJMrUMk",
                     },
                     {
                         title: "Kahn's Algorithm",
                         difficulty: "Hard",
                         lcLink: null,
                         gfgLink: "https://bit.ly/3c690mm",
+                        video: "https://youtu.be/5lZ0iJMrUMk",
                     },
                     {
                         title: "Cycle Detection in Directed Graph (BFS)",
@@ -2720,12 +2929,14 @@ const STRIVERS_SHEET = [
                         lcLink: "https://leetcode.com/problems/course-schedule/",
                         gfgLink:
                             "https://practice.geeksforgeeks.org/problems/course-schedule/1",
+                        video: "https://youtu.be/WAOfKpxYHR8",
                     },
                     {
                         title: "Course Schedule - II",
                         difficulty: "Hard",
                         lcLink: "https://leetcode.com/problems/course-schedule-ii/",
                         gfgLink: "https://bit.ly/3w8ZBBl",
+                        video: "https://youtu.be/WAOfKpxYHR8",
                     },
                     {
                         title: "Find eventual safe states",
@@ -2733,6 +2944,7 @@ const STRIVERS_SHEET = [
                         lcLink: "https://leetcode.com/problems/find-eventual-safe-states/",
                         gfgLink:
                             "https://practice.geeksforgeeks.org/problems/eventual-safe-states/1",
+                        video: "https://youtu.be/2gtg3VsDGyc",
                     },
                     {
                         title: "Alien dictionary",
@@ -2740,6 +2952,7 @@ const STRIVERS_SHEET = [
                         lcLink: "https://leetcode.com/problems/alien-dictionary/solution/",
                         gfgLink:
                             "https://practice.geeksforgeeks.org/problems/alien-dictionary/1",
+                        video: "https://youtu.be/U3N_je7tWAs",
                     },
                 ],
             },
@@ -2758,6 +2971,7 @@ const STRIVERS_SHEET = [
                         difficulty: "Hard",
                         lcLink: null,
                         gfgLink: "https://bit.ly/3Eo1mhq",
+                        video: "https://www.youtube.com/watch?v=ZUFQfFaU-8U&list=PLgUwDviBIf0oE3gA41TKO2H5bHpPd7fzn&index=27",
                     },
                     {
                         title: "Djisktra's Algorithm",
@@ -2765,12 +2979,14 @@ const STRIVERS_SHEET = [
                         lcLink: null,
                         gfgLink:
                             "https://practice.geeksforgeeks.org/problems/implementing-dijkstra-set-1-adjacency-matrix/1",
+                        video: "https://www.youtube.com/watch?v=rp1SMw7HSO8&list=PLgUwDviBIf0oE3gA41TKO2H5bHpPd7fzn&index=35",
                     },
                     {
                         title: "Why priority Queue is used in Djisktra's Algorithm",
                         difficulty: "Medium",
                         lcLink: null,
                         gfgLink: "https://bit.ly/3Et6alk",
+                        video: "https://www.youtube.com/watch?v=rp1SMw7HSO8&list=PLgUwDviBIf0oE3gA41TKO2H5bHpPd7fzn&index=35",
                     },
                     {
                         title: "Shortest path in a binary maze",
@@ -2783,6 +2999,7 @@ const STRIVERS_SHEET = [
                         difficulty: "Medium",
                         lcLink: "https://leetcode.com/problems/path-with-minimum-effort/",
                         gfgLink: "https://bit.ly/3OpIfbh",
+                        video: "https://youtu.be/0ytpZyiZFhA",
                     },
                     {
                         title: "Cheapest flights within k stops",
@@ -2802,6 +3019,7 @@ const STRIVERS_SHEET = [
                         lcLink: "https://leetcode.com/problems/number-of-ways-to-arrive-at-destination/",
                         gfgLink:
                             "https://practice.geeksforgeeks.org/problems/number-of-ways-to-arrive-at-destination/1",
+                        video: "https://youtu.be/_-0mx0SmYxA",
                     },
                     {
                         title: "Minimum steps to reach end from start by performing multiplication and mod operations with array elements",
@@ -2815,6 +3033,7 @@ const STRIVERS_SHEET = [
                         lcLink: null,
                         gfgLink:
                             "https://practice.geeksforgeeks.org/problems/distance-from-the-source-bellman-ford-algorithm/1",
+                        video: "https://youtu.be/0vVofAhAYjc",
                     },
                     {
                         title: "Floyd Warshal Algorithm",
@@ -2829,6 +3048,7 @@ const STRIVERS_SHEET = [
                         lcLink: "https://leetcode.com/problems/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance/",
                         gfgLink:
                             "https://practice.geeksforgeeks.org/problems/city-with-the-smallest-number-of-neighbors-at-a-threshold-distance/0/?category[]=Shortest%20Path&category[]=Shortest%20Path&page=1&query=category[]Shortest%20Pathpage1category[]Shortest%20Path",
+                        video: "https://youtu.be/9XybHVqTHcQ",
                     },
                 ],
             },
@@ -2849,18 +3069,21 @@ const STRIVERS_SHEET = [
                         lcLink: null,
                         gfgLink:
                             "https://practice.geeksforgeeks.org/problems/minimum-spanning-tree/1",
+                        video: "https://youtu.be/mJcZjjKzeqk",
                     },
                     {
                         title: "Disjoint Set [Union by Rank]",
                         difficulty: "Hard",
                         lcLink: null,
                         gfgLink: "https://bit.ly/3QSGvHz",
+                        video: "https://youtu.be/aBxjDBC4M1U",
                     },
                     {
                         title: "Disjoint Set [Union by Size]",
                         difficulty: "Hard",
                         lcLink: null,
                         gfgLink: "https://bit.ly/3QSGvHz",
+                        video: "https://youtu.be/aBxjDBC4M1U",
                     },
                     {
                         title: "Kruskal's Algorithm",
@@ -2874,6 +3097,7 @@ const STRIVERS_SHEET = [
                         difficulty: "Medium",
                         lcLink: "https://leetcode.com/problems/number-of-operations-to-make-network-connected/",
                         gfgLink: "https://bit.ly/3Esuzrd",
+                        video: "https://youtu.be/FYrl7iz9_ZU",
                     },
                     {
                         title: "Most stones removed with same rows or columns",
@@ -2887,6 +3111,7 @@ const STRIVERS_SHEET = [
                         lcLink: "https://leetcode.com/problems/accounts-merge/",
                         gfgLink:
                             "https://practice.geeksforgeeks.org/problems/merging-details/1",
+                        video: "https://youtu.be/FMwpt_aQOGw",
                     },
                     {
                         title: "Number of island II",
@@ -2899,6 +3124,7 @@ const STRIVERS_SHEET = [
                         difficulty: "Hard",
                         lcLink: "https://leetcode.com/problems/making-a-large-island/",
                         gfgLink: "https://bit.ly/3i1yOmk",
+                        video: "https://youtu.be/lgiz0Oup6gM",
                     },
                     {
                         title: "Swim in rising water",
@@ -2917,18 +3143,21 @@ const STRIVERS_SHEET = [
                         difficulty: "Hard",
                         lcLink: "https://leetcode.com/problems/critical-connections-in-a-network/discuss/382385/find-bridges-in-a-graph",
                         gfgLink: "https://bit.ly/3dFdvVe",
+                        video: "https://youtu.be/qrAub5z8FeA",
                     },
                     {
                         title: "Articulation Point",
                         difficulty: "Hard",
                         lcLink: null,
                         gfgLink: "https://bit.ly/3T2LPKu",
+                        video: "https://youtu.be/j1QDfU21iZk",
                     },
                     {
                         title: "Kosaraju's Algorithm",
                         difficulty: "Hard",
                         lcLink: null,
                         gfgLink: "https://bit.ly/3TbvByL",
+                        video: "https://www.youtube.com/watch?v=V8qIqJxCioo&list=PLgUwDviBIf0rGEWe64KWas0Nryn7SCRWw&index=27",
                     },
                 ],
             },
@@ -2967,24 +3196,28 @@ const STRIVERS_SHEET = [
                         difficulty: "Medium",
                         lcLink: null,
                         gfgLink: "https://bit.ly/3Xn0Kkw",
+                        video: "https://www.youtube.com/watch?v=EgG3jsGoPvQ",
                     },
                     {
                         title: "Frog Jump with k distances(DP-4)",
                         difficulty: "Medium",
                         lcLink: null,
                         gfgLink: "https://bit.ly/3GyNRya",
+                        video: "https://www.youtube.com/watch?v=EgG3jsGoPvQ",
                     },
                     {
                         title: "Maximum sum of non-adjacent elements (DP 5)",
                         difficulty: "Medium",
                         lcLink: "https://leetcode.com/problems/house-robber/",
                         gfgLink: "https://bit.ly/3QOMRs1",
+                        video: "https://www.youtube.com/watch?v=GrMBfJNk_NY",
                     },
                     {
                         title: "House Robber (DP 6)",
                         difficulty: "Medium",
                         lcLink: "https://leetcode.com/problems/house-robber-ii/",
                         gfgLink: "https://bit.ly/3QCCpDQ",
+                        video: "https://www.youtube.com/watch?v=3WaxQMELSkw",
                     },
                 ],
             },
@@ -2997,6 +3230,7 @@ const STRIVERS_SHEET = [
                         difficulty: "Medium",
                         lcLink: null,
                         gfgLink: "https://bit.ly/3glc9kp",
+                        video: "https://www.youtube.com/watch?v=AE39gJYuRog",
                     },
                     {
                         title: "Grid Unique Paths : DP on Grids (DP8)",
@@ -3004,6 +3238,7 @@ const STRIVERS_SHEET = [
                         lcLink: "https://leetcode.com/problems/unique-paths/",
                         gfgLink:
                             "https://practice.geeksforgeeks.org/problems/number-of-unique-paths/0",
+                        video: "https://www.youtube.com/watch?v=sdE0A2Oxofw",
                     },
                     {
                         title: "Grid Unique Paths 2 (DP 9)",
@@ -3034,6 +3269,7 @@ const STRIVERS_SHEET = [
                         difficulty: "Medium",
                         lcLink: null,
                         gfgLink: "https://bit.ly/3U9k6XT",
+                        video: "https://www.youtube.com/watch?v=QGfn7JeXK54",
                     },
                 ],
             },
@@ -3047,6 +3283,7 @@ const STRIVERS_SHEET = [
                         lcLink: null,
                         gfgLink:
                             "https://practice.geeksforgeeks.org/problems/subset-sum-problem-1611555638/1",
+                        video: "https://www.youtube.com/watch?v=fWX9xDmIzRI",
                     },
                     {
                         title: "Partition Equal Subset Sum (DP- 15)",
@@ -3054,6 +3291,7 @@ const STRIVERS_SHEET = [
                         lcLink: "https://leetcode.com/problems/partition-equal-subset-sum/",
                         gfgLink:
                             "https://practice.geeksforgeeks.org/problems/subset-sum-problem2014/1",
+                        video: "https://www.youtube.com/watch?v=7win3dcgo3k",
                     },
                     {
                         title: "Partition Set Into 2 Subsets With Min Absolute Sum Diff (DP- 16)",
@@ -3067,12 +3305,14 @@ const STRIVERS_SHEET = [
                         difficulty: "Medium",
                         lcLink: null,
                         gfgLink: "https://bit.ly/3AwVr8I",
+                        video: "https://www.youtube.com/watch?v=ZHyb-A2Mte4",
                     },
                     {
                         title: "Count Partitions with Given Difference (DP - 18)",
                         difficulty: "Medium",
                         lcLink: null,
                         gfgLink: "https://bit.ly/3gkAM0s",
+                        video: "https://www.youtube.com/watch?v=zoilQD1kYSg",
                     },
                     {
                         title: "Assign Cookies",
@@ -3080,6 +3320,7 @@ const STRIVERS_SHEET = [
                         lcLink: "https://leetcode.com/problems/assign-cookies/",
                         gfgLink:
                             "https://practice.geeksforgeeks.org/problems/0-1-knapsack-problem0945/1",
+                        video: "https://youtu.be/DIX2p7vb9co?si=GofAIDimue-Av0Fi",
                     },
                     {
                         title: "Minimum Coins (DP - 20)",
@@ -3087,6 +3328,7 @@ const STRIVERS_SHEET = [
                         lcLink: "https://leetcode.com/problems/coin-change/",
                         gfgLink:
                             "https://practice.geeksforgeeks.org/problems/-minimum-number-of-coins4426/1",
+                        video: "https://www.youtube.com/watch?v=myPeWb3Y68A",
                     },
                     {
                         title: "Target Sum (DP - 21)",
@@ -3094,18 +3336,21 @@ const STRIVERS_SHEET = [
                         lcLink: "https://leetcode.com/problems/target-sum/",
                         gfgLink:
                             "https://practice.geeksforgeeks.org/problems/target-sum-1626326450/1",
+                        video: "https://www.youtube.com/watch?v=b3GD8263-PQ",
                     },
                     {
                         title: "Coin Change 2 (DP - 22)",
                         difficulty: "Hard",
                         lcLink: "https://leetcode.com/problems/coin-change-2/",
                         gfgLink: "https://bit.ly/3SZJWOl",
+                        video: "https://www.youtube.com/watch?v=HgyouUi11zk",
                     },
                     {
                         title: "Unbounded Knapsack (DP - 23)",
                         difficulty: "Hard",
                         lcLink: null,
                         gfgLink: "https://bit.ly/3Cbc5fz",
+                        video: "https://youtu.be/OgvOZ6OrJoY",
                     },
                     {
                         title: "Rod Cutting Problem | (DP - 24)",
@@ -3113,6 +3358,7 @@ const STRIVERS_SHEET = [
                         lcLink: null,
                         gfgLink:
                             "https://practice.geeksforgeeks.org/problems/rod-cutting0840/1",
+                        video: "https://youtu.be/mO8XpGoJwuo",
                     },
                 ],
             },
@@ -3126,12 +3372,14 @@ const STRIVERS_SHEET = [
                         lcLink: "https://leetcode.com/problems/longest-common-subsequence/",
                         gfgLink:
                             "https://practice.geeksforgeeks.org/problems/longest-common-subsequence-1587115620/1",
+                        video: "https://youtu.be/-zI4mrF2Pb4",
                     },
                     {
                         title: "Print Longest Common Subsequence | (DP - 26)",
                         difficulty: "Hard",
                         lcLink: null,
                         gfgLink: "https://bit.ly/3T1Va4U",
+                        video: "https://youtu.be/-zI4mrF2Pb4",
                     },
                     {
                         title: "Longest Common Substring | (DP - 27)",
@@ -3139,6 +3387,7 @@ const STRIVERS_SHEET = [
                         lcLink: null,
                         gfgLink:
                             "https://practice.geeksforgeeks.org/problems/longest-common-substring1452/1",
+                        video: "https://youtu.be/_wP9mWNPL5w",
                     },
                     {
                         title: "Longest Palindromic Subsequence | (DP-28)",
@@ -3146,6 +3395,7 @@ const STRIVERS_SHEET = [
                         lcLink: "https://leetcode.com/problems/longest-palindromic-subsequence/",
                         gfgLink:
                             "https://practice.geeksforgeeks.org/problems/longest-palindromic-subsequence-1612327878/1",
+                        video: "https://youtu.be/6i_T5kkfv4A",
                     },
                     {
                         title: "Minimum insertions to make string palindrome | DP-29",
@@ -3153,6 +3403,7 @@ const STRIVERS_SHEET = [
                         lcLink: "https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/",
                         gfgLink:
                             "https://practice.geeksforgeeks.org/problems/form-a-palindrome1455/1",
+                        video: "https://www.youtube.com/watch?v=xPBLEj41rFU",
                     },
                     {
                         title: "Minimum Insertions/Deletions to Convert String | (DP- 30)",
@@ -3167,6 +3418,7 @@ const STRIVERS_SHEET = [
                         lcLink: "https://leetcode.com/problems/shortest-common-supersequence/",
                         gfgLink:
                             "https://practice.geeksforgeeks.org/problems/shortest-common-supersequence0322/1",
+                        video: "https://youtu.be/xElxAuBcvsU",
                     },
                     {
                         title: "Distinct Subsequences| (DP-32)",
@@ -3174,6 +3426,7 @@ const STRIVERS_SHEET = [
                         lcLink: "https://leetcode.com/problems/distinct-subsequences/",
                         gfgLink:
                             "https://practice.geeksforgeeks.org/problems/number-of-distinct-subsequences0909/1",
+                        video: "https://youtu.be/nVG7eTiD2bY",
                     },
                     {
                         title: "Edit Distance | (DP-33)",
@@ -3181,6 +3434,7 @@ const STRIVERS_SHEET = [
                         lcLink: "https://leetcode.com/problems/edit-distance/",
                         gfgLink:
                             "https://practice.geeksforgeeks.org/problems/edit-distance3702/1",
+                        video: "https://youtu.be/fJaKO8FbDdo",
                     },
                     {
                         title: "Wildcard Matching | (DP-34)",
@@ -3188,6 +3442,7 @@ const STRIVERS_SHEET = [
                         lcLink: "https://leetcode.com/problems/wildcard-matching/",
                         gfgLink:
                             "https://practice.geeksforgeeks.org/problems/wildcard-pattern-matching/1",
+                        video: "https://youtu.be/ZmlQ3vgAOMo",
                     },
                 ],
             },
@@ -3201,6 +3456,7 @@ const STRIVERS_SHEET = [
                         lcLink: "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/",
                         gfgLink:
                             "https://practice.geeksforgeeks.org/problems/stock-buy-and-sell-1587115621/1",
+                        video: "https://youtu.be/excAOvwF_Wk",
                     },
                     {
                         title: "Buy and Sell Stock - II|(DP-36)",
@@ -3246,24 +3502,28 @@ const STRIVERS_SHEET = [
                         lcLink: "https://leetcode.com/problems/longest-increasing-subsequence/",
                         gfgLink:
                             "https://practice.geeksforgeeks.org/problems/longest-increasing-subsequence-1587115620/1",
+                        video: "https://youtu.be/on2hvxBXJH4",
                     },
                     {
                         title: "Printing Longest Increasing Subsequence|(DP-42)",
                         difficulty: "Hard",
                         lcLink: null,
                         gfgLink: "https://bit.ly/3XiRbmG",
+                        video: "https://youtu.be/on2hvxBXJH4",
                     },
                     {
                         title: "Longest Increasing Subsequence |(DP-43)",
                         difficulty: "Hard",
                         lcLink: null,
                         gfgLink: "https://bit.ly/3Pxf84L",
+                        video: "https://youtu.be/on2hvxBXJH4",
                     },
                     {
                         title: "Largest Divisible Subset|(DP-44)",
                         difficulty: "Hard",
                         lcLink: "https://leetcode.com/problems/largest-divisible-subset/",
                         gfgLink: "https://bit.ly/3hYsWKC",
+                        video: "https://youtu.be/gDuZwBW9VvM",
                     },
                     {
                         title: "Longest String Chain|(DP-45)",
@@ -3277,12 +3537,14 @@ const STRIVERS_SHEET = [
                         lcLink: null,
                         gfgLink:
                             "https://practice.geeksforgeeks.org/problems/longest-bitonic-subsequence0824/1",
+                        video: "https://youtu.be/y4vN0WNdrlg",
                     },
                     {
                         title: "Number of Longest Increasing Subsequences|(DP-47)",
                         difficulty: "Hard",
                         lcLink: "https://leetcode.com/problems/number-of-longest-increasing-subsequence/",
                         gfgLink: "https://bit.ly/3EohD60",
+                        video: "https://youtu.be/on2hvxBXJH4",
                     },
                 ],
             },
@@ -3295,24 +3557,28 @@ const STRIVERS_SHEET = [
                         difficulty: "Hard",
                         lcLink: null,
                         gfgLink: "https://bit.ly/3Cgg36D",
+                        video: "https://youtu.be/vRVfmbCFW7Y",
                     },
                     {
                         title: "Matrix Chain Multiplication | Bottom-Up|(DP-49)",
                         difficulty: "Hard",
                         lcLink: null,
                         gfgLink: "https://bit.ly/3Cgg36D",
+                        video: "https://youtu.be/pDCXsbAw5Cg",
                     },
                     {
                         title: "Minimum Cost to Cut the Stick|(DP-50)",
                         difficulty: "Hard",
                         lcLink: "https://leetcode.com/problems/minimum-cost-to-cut-a-stick/",
                         gfgLink: "https://bit.ly/3K3ItCE",
+                        video: "https://youtu.be/xwomavsC86c",
                     },
                     {
                         title: "Burst Balloons|(DP-51)",
                         difficulty: "Hard",
                         lcLink: "https://leetcode.com/problems/burst-balloons/",
                         gfgLink: "https://bit.ly/3A9LdKp",
+                        video: "https://youtu.be/Yz4LlDSlkns",
                     },
                     {
                         title: "Evaluate Boolean Expression to True|(DP-52)",
@@ -3325,12 +3591,14 @@ const STRIVERS_SHEET = [
                         difficulty: "Hard",
                         lcLink: "https://leetcode.com/problems/palindrome-partitioning-ii/",
                         gfgLink: "https://bit.ly/3QP6gsc",
+                        video: "https://youtu.be/_H8V5hJUGd0",
                     },
                     {
                         title: "Partition Array for Maximum Sum|(DP-54)",
                         difficulty: "Hard",
                         lcLink: "https://leetcode.com/problems/partition-array-for-maximum-sum/",
                         gfgLink: "https://bit.ly/3AUSIGj",
+                        video: "https://youtu.be/PhWWJmaKfMc",
                     },
                 ],
             },
@@ -3344,12 +3612,14 @@ const STRIVERS_SHEET = [
                         lcLink: "https://leetcode.com/problems/maximal-rectangle/",
                         gfgLink:
                             "https://practice.geeksforgeeks.org/problems/max-rectangle/1",
+                        video: "https://youtu.be/tOylVCugy9k",
                     },
                     {
                         title: "Count Square Submatrices with All Ones|(DP-56)",
                         difficulty: "Hard",
                         lcLink: "https://leetcode.com/problems/count-square-submatrices-with-all-ones/",
                         gfgLink: "https://bit.ly/3UW7u7o",
+                        video: "https://youtu.be/auS1fynpnjo",
                     },
                 ],
             },
@@ -3394,12 +3664,14 @@ const STRIVERS_SHEET = [
                         lcLink: "https://bit.ly/3ocRQW0",
                         gfgLink:
                             "https://practice.geeksforgeeks.org/problems/count-of-distinct-substrings/1",
+                        video: "https://www.youtube.com/watch?v=RV0QeTyHZxo&list=PLgUwDviBIf0pcIDCZnxhv0LkHf5KzG9zp&index=4",
                     },
                     {
                         title: "Bit PreRequisites for TRIE Problems",
                         difficulty: "Hard",
                         lcLink: null,
                         gfgLink: "https://bit.ly/3Vw4XB1",
+                        video: "https://youtu.be/5iyuU4hQFrw",
                     },
                     {
                         title: "Maximum XOR of two numbers in an array",
@@ -3407,6 +3679,7 @@ const STRIVERS_SHEET = [
                         lcLink: "https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array/",
                         gfgLink:
                             "https://practice.geeksforgeeks.org/problems/maximum-xor-of-two-numbers-in-an-array/0",
+                        video: "https://www.youtube.com/watch?v=EIhAwfHubE8&list=PLgUwDviBIf0pcIDCZnxhv0LkHf5KzG9zp&index=6",
                     },
                     {
                         title: "Maximum XOR With an Element From Array",

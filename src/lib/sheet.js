@@ -1,4 +1,4 @@
-import STRIVERS_SHEET from "../data/striversSheet.js";
+import STRIVERS_SHEET from "../data/striversSheetv1.js";
 
 export function normalizeSheet(rawSheet) {
     const problemsById = {};
