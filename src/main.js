@@ -51,17 +51,15 @@ function applyTheme(theme) {
     document.documentElement.classList.toggle("dark", theme === "dark");
     const isDark = theme === "dark";
 
-    if (elements.themeToggleLabel) {
-        elements.themeToggleLabel.textContent = isDark
-            ? "Light Theme"
-            : "Dark Theme";
-    }
-
     elements.themeIconMoon?.classList.toggle("is-hidden", isDark);
     elements.themeIconSun?.classList.toggle("is-hidden", !isDark);
 
     if (elements.themeToggleBtn) {
         elements.themeToggleBtn.setAttribute("aria-pressed", String(isDark));
+        elements.themeToggleBtn.setAttribute(
+            "aria-label",
+            isDark ? "Switch to light theme" : "Switch to dark theme",
+        );
     }
 }
 
@@ -161,7 +159,6 @@ async function getCurrentUserWithRetry({
 
 const elements = {
     themeToggleBtn: document.querySelector("#themeToggleBtn"),
-    themeToggleLabel: document.querySelector("#themeToggleLabel"),
     themeIconMoon: document.querySelector("#themeIconMoon"),
     themeIconSun: document.querySelector("#themeIconSun"),
     guestAuth: document.querySelector("#guestAuth"),
@@ -173,7 +170,8 @@ const elements = {
     syncNowBtn: document.querySelector("#syncNowBtn"),
     userName: document.querySelector("#userName"),
     userAvatar: document.querySelector("#userAvatar"),
-    syncStatus: document.querySelector("#syncStatus"),
+    syncStatusDot: document.querySelector("#syncStatusDot"),
+    syncStatusText: document.querySelector("#syncStatusText"),
     statsGrid: document.querySelector("#statsGrid"),
     searchInput: document.querySelector("#searchInput"),
     topicFilter: document.querySelector("#topicFilter"),
@@ -248,8 +246,35 @@ function getProblemProgress(problemId) {
     );
 }
 
+const SYNC_DOT_CLASS = {
+    success: "h-2 w-2 shrink-0 rounded-full bg-emerald-500",
+    error: "h-2 w-2 shrink-0 rounded-full bg-rose-500",
+    pending: "h-2 w-2 shrink-0 rounded-full bg-amber-500 animate-pulse",
+    neutral: "h-2 w-2 shrink-0 rounded-full bg-muted-foreground/50",
+};
+
+function classifySyncStatus(text) {
+    const lower = text.toLowerCase();
+    if (/fail|error|cancelled|blocked|invalid|not restored/.test(lower)) {
+        return "error";
+    }
+    if (/synced|successful|complete/.test(lower)) {
+        return "success";
+    }
+    if (/pulling|pushing|opening|continuing/.test(lower)) {
+        return "pending";
+    }
+    return "neutral";
+}
+
 function setSyncStatus(text) {
-    elements.syncStatus.textContent = `Sync status: ${text}`;
+    if (elements.syncStatusText) {
+        elements.syncStatusText.textContent = text;
+    }
+    if (elements.syncStatusDot) {
+        elements.syncStatusDot.className =
+            SYNC_DOT_CLASS[classifySyncStatus(text)];
+    }
 }
 
 function mergeProgressMaps(localMap, remoteMap) {
