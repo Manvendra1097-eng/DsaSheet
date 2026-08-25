@@ -25,6 +25,7 @@ const state = {
     activeStepNo: null,
     filters: {
         search: "",
+        topic: "all",
         difficulty: "all",
         status: "all",
     },
@@ -175,6 +176,7 @@ const elements = {
     syncStatus: document.querySelector("#syncStatus"),
     statsGrid: document.querySelector("#statsGrid"),
     searchInput: document.querySelector("#searchInput"),
+    topicFilter: document.querySelector("#topicFilter"),
     difficultyFilter: document.querySelector("#difficultyFilter"),
     statusFilter: document.querySelector("#statusFilter"),
     stepsContainer: document.querySelector("#stepsContainer"),
@@ -221,6 +223,16 @@ function normalizeSheet(rawSheet) {
 }
 
 const normalizedSheet = normalizeSheet(STRIVERS_SHEET);
+
+function renderTopicOptions() {
+    const options = normalizedSheet
+        .map(
+            (step) =>
+                `<option value="${step.stepNo}">Step ${step.stepNo}: ${escapeHtml(step.stepTitle)}</option>`,
+        )
+        .join("");
+    elements.topicFilter.insertAdjacentHTML("beforeend", options);
+}
 
 function getScopeId() {
     return state.user?.uid || "guest";
@@ -388,6 +400,13 @@ function normalizeLink(rawLink) {
 function renderSheet() {
     const html = normalizedSheet
         .map((step) => {
+            if (
+                state.filters.topic !== "all" &&
+                String(step.stepNo) !== state.filters.topic
+            ) {
+                return "";
+            }
+
             const allStepProblems = step.subSteps.flatMap(
                 (subStep) => subStep.problems,
             );
@@ -656,6 +675,15 @@ function setupEvents() {
         renderSheet();
     });
 
+    elements.topicFilter.addEventListener("change", () => {
+        state.filters.topic = elements.topicFilter.value;
+        state.activeStepNo =
+            state.filters.topic === "all"
+                ? state.activeStepNo
+                : Number(state.filters.topic);
+        renderSheet();
+    });
+
     elements.difficultyFilter.addEventListener("change", () => {
         state.filters.difficulty = elements.difficultyFilter.value;
         renderSheet();
@@ -725,6 +753,7 @@ function renderAll() {
 
 async function bootstrap() {
     applyTheme(getPreferredTheme());
+    renderTopicOptions();
     setupEvents();
     renderAll();
     renderAuthState();
