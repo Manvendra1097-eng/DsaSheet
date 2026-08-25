@@ -18,8 +18,6 @@
     --ring: oklch(0.708 0 0);
     --shadow: oklch(0.145 0 0);
     --radius: 0.625rem;
-    --orb-a: oklch(0.852 0.199 91.936);
-    --orb-b: oklch(0.75 0.15 40);
 }
 
 :root[data-theme="dark"] {
@@ -41,8 +39,6 @@
     --input: oklch(1 0 0 / 15%);
     --ring: oklch(0.556 0 0);
     --shadow: oklch(0 0 0);
-    --orb-a: oklch(0.6 0.15 91);
-    --orb-b: oklch(0.5 0.15 40);
 }
 
 :root[data-palette="orange"] {
@@ -64,8 +60,6 @@
     --input: oklch(0.922 0 0);
     --ring: oklch(0.708 0 0);
     --shadow: oklch(0.145 0 0);
-    --orb-a: oklch(0.555 0.163 48.998);
-    --orb-b: oklch(0.75 0.18 85);
 }
 
 :root[data-palette="orange"][data-theme="dark"] {
@@ -87,8 +81,6 @@
     --input: oklch(1 0 0 / 15%);
     --ring: oklch(0.556 0 0);
     --shadow: oklch(0 0 0);
-    --orb-a: oklch(0.47 0.137 46.201);
-    --orb-b: oklch(0.55 0.15 85);
 }
 
 * {
@@ -102,64 +94,7 @@ body {
 
 body {
     margin: 0;
-    background:
-        radial-gradient(
-            circle at 15% 10%,
-            color-mix(in srgb, var(--orb-a) 25%, transparent),
-            transparent 35%
-        ),
-        radial-gradient(
-            circle at 80% 0%,
-            color-mix(in srgb, var(--orb-b) 25%, transparent),
-            transparent 30%
-        ),
-        linear-gradient(
-            180deg,
-            var(--background),
-            color-mix(in srgb, var(--background) 95%, transparent)
-        );
-}
-
-.bg-grid {
-    position: fixed;
-    inset: 0;
-    z-index: -2;
-    background-image:
-        linear-gradient(
-            to right,
-            color-mix(in srgb, var(--border) 13%, transparent) 1px,
-            transparent 1px
-        ),
-        linear-gradient(
-            to bottom,
-            color-mix(in srgb, var(--border) 13%, transparent) 1px,
-            transparent 1px
-        );
-    background-size: 32px 32px;
-    mask-image: radial-gradient(circle at center, black 45%, transparent 95%);
-    pointer-events: none;
-}
-
-.bg-orb {
-    position: fixed;
-    width: 30rem;
-    height: 30rem;
-    filter: blur(75px);
-    opacity: 0.4;
-    z-index: -1;
-    pointer-events: none;
-}
-
-.orb-a {
-    top: -12rem;
-    right: -10rem;
-    background: var(--orb-a);
-}
-
-.orb-b {
-    left: -8rem;
-    bottom: -12rem;
-    background: var(--orb-b);
+    background: var(--background);
 }
 
 .is-hidden {

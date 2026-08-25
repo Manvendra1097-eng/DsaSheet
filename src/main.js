@@ -398,7 +398,7 @@ function renderAuthState() {
 }
 
 function statCard(label, value) {
-    return `<article class="rounded-xl border border-border/70 bg-card/80 p-4 shadow-glass backdrop-blur"><p class="text-xs text-muted-foreground">${label}</p><p class="mt-1 text-2xl font-extrabold tracking-tight">${value}</p></article>`;
+    return `<article class="rounded-xl border border-border bg-card p-4 shadow-sm"><p class="text-xs text-muted-foreground">${label}</p><p class="mt-1 text-2xl font-extrabold tracking-tight">${value}</p></article>`;
 }
 
 function problemMatchesFilters(problem) {
@@ -481,7 +481,7 @@ function renderSheet() {
                             const cnLink = normalizeLink(problem.cnLink);
 
                             return `
-                                <article class="grid grid-cols-1 gap-3 rounded-xl border border-border/50 p-3 md:grid-cols-[1fr_auto_auto] md:items-start ${progress.status === "solved" ? "bg-emerald-500/10" : progress.status === "attempted" ? "bg-amber-500/10" : "bg-background/40"}">
+                                <article class="grid grid-cols-1 gap-3 rounded-xl border border-border p-3 md:grid-cols-[1fr_auto_auto] md:items-start ${progress.status === "solved" ? "bg-emerald-500/10" : progress.status === "attempted" ? "bg-amber-500/10" : "bg-background"}">
                   <div>
                                         <p class="text-sm font-semibold md:text-base">${escapeHtml(problem.titleText)}</p>
                                         <div class="mt-2 flex flex-wrap gap-2">
@@ -505,7 +505,7 @@ function renderSheet() {
                         .join("");
 
                     return `
-                        <section class="mt-3 rounded-xl border border-border/40 bg-background/45 p-3">
+                        <section class="mt-3 rounded-xl border border-border bg-muted/30 p-3">
                             <h4 class="text-sm font-semibold md:text-base">${escapeHtml(subStep.subStepTitle)}</h4>
               ${problemsHtml}
             </section>
@@ -519,8 +519,8 @@ function renderSheet() {
 
             const isOpen = state.activeStepNo === step.stepNo;
             return `
-                <article class="rounded-2xl border border-border/70 bg-card/80 shadow-glass backdrop-blur">
-                    <header class="border-b border-border/60 bg-gradient-to-r from-background/20 to-secondary/40 px-4 py-3">
+                <article class="rounded-2xl border border-border bg-card shadow-sm">
+                    <header class="border-b border-border px-4 py-3">
                         <button class="flex w-full items-center gap-3" data-action="toggle-step" data-step-no="${step.stepNo}" type="button" aria-expanded="${isOpen}">
                             <h3 class="text-left text-sm font-bold md:text-base">Step ${step.stepNo}: ${escapeHtml(step.stepTitle)}</h3>
                             <span class="ml-auto inline-flex items-center rounded-full border border-border bg-background px-2.5 py-0.5 font-mono text-[11px] text-muted-foreground">Solved ${solvedInStep}/${allStepProblems.length}</span>
@@ -537,7 +537,7 @@ function renderSheet() {
 
     elements.stepsContainer.innerHTML =
         html ||
-        '<p class="rounded-xl border border-dashed border-border/70 bg-card/70 p-4 text-sm text-muted-foreground">No problems found for current filters.</p>';
+        '<p class="rounded-xl border border-dashed border-border bg-card p-4 text-sm text-muted-foreground">No problems found for current filters.</p>';
 }
 
 function statusButton(problemId, statusValue, activeStatus) {
