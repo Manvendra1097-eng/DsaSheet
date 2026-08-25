@@ -746,12 +746,14 @@ const STRIVERS_SHEET = [
                         difficulty: "Medium",
                         lcLink: null,
                         gfgLink: "https://bit.ly/3w5QSzC",
+                        video: "https://youtu.be/xmguZ6GbatA",
                     },
                     {
                         title: "Count number of subarrays with given xor K",
                         difficulty: "Hard",
                         lcLink: "https://www.interviewbit.com/problems/subarray-with-given-xor/",
                         gfgLink: "https://bit.ly/3PrvhZs",
+                        video: "https://youtu.be/eZr-6p0B7ME",
                     },
                     {
                         title: "Merge Overlapping Subintervals",
@@ -793,6 +795,7 @@ const STRIVERS_SHEET = [
                         difficulty: "Easy",
                         lcLink: "https://leetcode.com/problems/maximum-product-subarray/",
                         gfgLink: "https://bit.ly/3PrlQsU",
+                        video: "https://youtu.be/hnswaLJvr6g",
                     },
                 ],
             },
@@ -1008,12 +1011,14 @@ const STRIVERS_SHEET = [
                         difficulty: "Easy",
                         lcLink: null,
                         gfgLink: "https://bit.ly/3QNDw2W",
+                        video: "https://youtu.be/SCz-1TtYxDI",
                     },
                     {
                         title: "Search in a 2 D matrix",
                         difficulty: "Medium",
                         lcLink: "https://leetcode.com/problems/search-a-2d-matrix/",
                         gfgLink: "https://bit.ly/3dAwi3Z",
+                        video: "https://youtu.be/JXU4Akft7yk",
                     },
                     {
                         title: "Search in a row and column wise sorted matrix",
@@ -1021,6 +1026,7 @@ const STRIVERS_SHEET = [
                         lcLink: "https://leetcode.com/problems/search-a-2d-matrix-ii/",
                         gfgLink:
                             "https://www.codingninjas.com/codestudio/problems/search-in-a-row-wise-and-column-wise-sorted-matrix_839811",
+                        video: "https://youtu.be/9ZbB397jU4k",
                     },
                     {
                         title: "Find Peak Element (2D Matrix)",
@@ -2021,12 +2027,14 @@ const STRIVERS_SHEET = [
                         difficulty: "Medium",
                         lcLink: "https://leetcode.com/problems/number-of-substrings-containing-all-three-characters/",
                         gfgLink: "https://bit.ly/3xVYTZa",
+                        video: "https://youtu.be/xtqN4qlgr8s",
                     },
                     {
                         title: "Maximum point you can obtain from cards",
                         difficulty: "Medium",
                         lcLink: "https://leetcode.com/problems/maximum-points-you-can-obtain-from-cards/",
                         gfgLink: "https://bit.ly/3DxaMXw",
+                        video: "https://youtu.be/pBWCOCS636U",
                     },
                 ],
             },
@@ -2046,6 +2054,7 @@ const STRIVERS_SHEET = [
                         difficulty: "Hard",
                         lcLink: "https://leetcode.com/problems/subarrays-with-k-different-integers/",
                         gfgLink: "https://bit.ly/3DLRtee",
+                        video: "https://youtu.be/7wYGbV_LsX4",
                     },
                     {
                         title: "Minimum Window Substring",
@@ -2060,6 +2069,7 @@ const STRIVERS_SHEET = [
                         difficulty: "Hard",
                         lcLink: "https://leetcode.com/problems/minimum-window-subsequence/",
                         gfgLink: "https://bit.ly/3DnB4uZ",
+                        video: "https://algomaster.io/learn/dsa/minimum-window-subsequence",
                     },
                 ],
             },
