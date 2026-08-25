@@ -85,6 +85,10 @@ To set this up:
 3. Push to `main` — the workflow writes `src/firebase-config.js` from these secrets before
    deploying, then discards the runner (nothing is committed back to the repo).
 
+Alternatively, if you have the [GitHub CLI](https://cli.github.com) installed and authenticated
+(`gh auth login`), run `node scripts/push-firebase-secrets.mjs <owner>/<repo>` to push all 8
+secrets from your local `src/firebase-config.js` in one step.
+
 ## Deploy to GitHub Pages
 
 1. Push this project to a GitHub repo.
