@@ -975,8 +975,8 @@ const STRIVERS_SHEET = [
                     {
                         title: "Painter's partition",
                         difficulty: "Hard",
-                        lcLink: "https://leetcode.com/problems/painting-the-walls/",
-                        gfgLink: null,
+                        gfgLink:
+                            "https://www.geeksforgeeks.org/problems/the-painters-partition-problem1535/1",
                         video: "https://www.youtube.com/watch?v=thUd_WJn6wk&list=PLgUwDviBIf0pMFMWuuvDNMAkoQFi-h0ZF&index=20",
                     },
                     {
