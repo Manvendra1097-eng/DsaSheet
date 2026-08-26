@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { ChevronDown, ChevronRight } from "lucide-react";
 import ProblemRow from "./ProblemRow.jsx";
 
@@ -10,6 +11,8 @@ export default function StepCard({
     onSetStatus,
     onSetNotes,
 }) {
+    const [activeSubStepId, setActiveSubStepId] = useState(null);
+
     const allStepProblems = step.subSteps.flatMap(
         (subStep) => subStep.problems,
     );
@@ -53,27 +56,63 @@ export default function StepCard({
 
             {isOpen && (
                 <div className="px-3 pb-3">
-                    {visibleSubSteps.map((subStep) => (
-                        <section
-                            key={subStep.subStepId}
-                            className="mt-3 rounded-xl border border-border bg-muted/30 p-3"
-                        >
-                            <h4 className="text-sm font-semibold md:text-base">
-                                {subStep.subStepTitle}
-                            </h4>
-                            <div className="mt-2 grid gap-2">
-                                {subStep.problems.map((problem) => (
-                                    <ProblemRow
-                                        key={problem.id}
-                                        problem={problem}
-                                        progress={getProgress(problem.id)}
-                                        onSetStatus={onSetStatus}
-                                        onSetNotes={onSetNotes}
-                                    />
-                                ))}
-                            </div>
-                        </section>
-                    ))}
+                    {visibleSubSteps.map((subStep) => {
+                        const subStepOpen =
+                            activeSubStepId === subStep.subStepId;
+                        const solvedInSubStep = subStep.problems.filter(
+                            (problem) =>
+                                getProgress(problem.id).status === "solved",
+                        ).length;
+
+                        return (
+                            <section
+                                key={subStep.subStepId}
+                                className="mt-3 rounded-xl border border-border bg-muted/30"
+                            >
+                                <button
+                                    type="button"
+                                    onClick={() =>
+                                        setActiveSubStepId((prev) =>
+                                            prev === subStep.subStepId
+                                                ? null
+                                                : subStep.subStepId,
+                                        )
+                                    }
+                                    aria-expanded={subStepOpen}
+                                    className="flex w-full items-center gap-3 px-3 py-2.5"
+                                >
+                                    <h4 className="text-left text-sm font-semibold md:text-base">
+                                        {subStep.subStepTitle}
+                                    </h4>
+                                    <span className="ml-auto inline-flex items-center rounded-full border border-border bg-background px-2 py-0.5 font-mono text-[11px] text-muted-foreground">
+                                        {solvedInSubStep}/
+                                        {subStep.problems.length}
+                                    </span>
+                                    {subStepOpen ? (
+                                        <ChevronDown className="h-4 w-4 text-muted-foreground" />
+                                    ) : (
+                                        <ChevronRight className="h-4 w-4 text-muted-foreground" />
+                                    )}
+                                </button>
+
+                                {subStepOpen && (
+                                    <div className="grid gap-2 px-3 pb-3">
+                                        {subStep.problems.map((problem) => (
+                                            <ProblemRow
+                                                key={problem.id}
+                                                problem={problem}
+                                                progress={getProgress(
+                                                    problem.id,
+                                                )}
+                                                onSetStatus={onSetStatus}
+                                                onSetNotes={onSetNotes}
+                                            />
+                                        ))}
+                                    </div>
+                                )}
+                            </section>
+                        );
+                    })}
                 </div>
             )}
         </article>

@@ -1,5 +1,7 @@
 import { useState } from "react";
+import { StickyNote } from "lucide-react";
 import { normalizeLink } from "../lib/sheet.js";
+import NotesModal from "./NotesModal.jsx";
 
 const DIFFICULTY_CLASS = {
     easy: "border-emerald-500/35 bg-emerald-500/10 text-emerald-700 dark:text-emerald-300",
@@ -44,7 +46,8 @@ export default function ProblemRow({
     onSetStatus,
     onSetNotes,
 }) {
-    const [notes, setNotes] = useState(progress.notes || "");
+    const [notesOpen, setNotesOpen] = useState(false);
+    const hasNotes = Boolean(progress.notes && progress.notes.trim());
     const difficultyClass = (problem.difficultyText || "easy").toLowerCase();
     const lcLink = normalizeLink(problem.lcLink);
     const gfgLink = normalizeLink(problem.gfgLink);
@@ -53,7 +56,7 @@ export default function ProblemRow({
 
     return (
         <article
-            className={`grid grid-cols-1 gap-3 rounded-xl border border-border p-3 md:grid-cols-[1fr_auto_auto] md:items-start ${ROW_TONE_CLASS[progress.status]}`}
+            className={`grid grid-cols-1 gap-3 rounded-xl border border-border p-3 md:grid-cols-[1fr_auto] md:items-start ${ROW_TONE_CLASS[progress.status]}`}
         >
             <div>
                 <p className="text-sm font-semibold md:text-base">
@@ -110,23 +113,41 @@ export default function ProblemRow({
                 </div>
             </div>
 
-            <div className="flex flex-wrap gap-1.5 md:justify-end">
-                {["not-started", "attempted", "solved"].map((status) => (
-                    <StatusButton
-                        key={status}
-                        status={status}
-                        active={status === progress.status}
-                        onClick={() => onSetStatus(problem.id, status)}
-                    />
-                ))}
+            <div className="flex flex-wrap items-start gap-1.5 md:flex-col md:items-end">
+                <div className="flex flex-wrap gap-1.5 md:justify-end">
+                    {["not-started", "attempted", "solved"].map((status) => (
+                        <StatusButton
+                            key={status}
+                            status={status}
+                            active={status === progress.status}
+                            onClick={() => onSetStatus(problem.id, status)}
+                        />
+                    ))}
+                </div>
+
+                <button
+                    type="button"
+                    onClick={() => setNotesOpen(true)}
+                    className={`inline-flex items-center gap-1.5 rounded-full border px-2.5 py-1 text-[11px] font-medium transition-colors ${
+                        hasNotes
+                            ? "border-primary/40 bg-primary/10 text-primary"
+                            : "border-border bg-background text-muted-foreground hover:bg-secondary"
+                    }`}
+                >
+                    <StickyNote className="h-3 w-3" />
+                    {hasNotes ? "Notes" : "Add note"}
+                </button>
             </div>
 
-            <textarea
-                value={notes}
-                onChange={(event) => setNotes(event.target.value)}
-                onBlur={() => onSetNotes(problem.id, notes.trim())}
-                placeholder="Notes"
-                className="h-20 w-full rounded-md border border-input bg-background px-3 py-2 text-xs outline-none ring-offset-background placeholder:text-muted-foreground focus-visible:ring-2 focus-visible:ring-ring md:w-60"
+            <NotesModal
+                open={notesOpen}
+                title={problem.titleText}
+                initialValue={progress.notes || ""}
+                onClose={() => setNotesOpen(false)}
+                onSave={(value) => {
+                    onSetNotes(problem.id, value);
+                    setNotesOpen(false);
+                }}
             />
         </article>
     );
