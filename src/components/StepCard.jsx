@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { ChevronDown, ChevronRight } from "lucide-react";
 import ProblemRow from "./ProblemRow.jsx";
 
@@ -12,6 +12,26 @@ export default function StepCard({
     onSetNotes,
 }) {
     const [activeSubStepId, setActiveSubStepId] = useState(null);
+    const cardRef = useRef(null);
+    const subStepRefs = useRef({});
+
+    useEffect(() => {
+        if (isOpen) {
+            cardRef.current?.scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+            });
+        }
+    }, [isOpen]);
+
+    useEffect(() => {
+        if (activeSubStepId) {
+            subStepRefs.current[activeSubStepId]?.scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+            });
+        }
+    }, [activeSubStepId]);
 
     const allStepProblems = step.subSteps.flatMap(
         (subStep) => subStep.problems,
@@ -32,7 +52,10 @@ export default function StepCard({
     }
 
     return (
-        <article className="rounded-2xl border border-border bg-card shadow-sm">
+        <article
+            ref={cardRef}
+            className="scroll-mt-24 rounded-2xl border border-border bg-card shadow-sm"
+        >
             <header className="border-b border-border rounded-2xl px-4 py-3">
                 <button
                     type="button"
@@ -67,7 +90,11 @@ export default function StepCard({
                         return (
                             <section
                                 key={subStep.subStepId}
-                                className="mt-3 rounded-xl border border-border bg-muted/30"
+                                ref={(node) => {
+                                    subStepRefs.current[subStep.subStepId] =
+                                        node;
+                                }}
+                                className="mt-3 scroll-mt-24 rounded-xl border border-border bg-muted/30"
                             >
                                 <button
                                     type="button"
